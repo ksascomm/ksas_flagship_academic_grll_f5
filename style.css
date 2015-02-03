@@ -1,0 +1,464 @@
+/*
+Theme Name: 	GRLL/Multi Program (Flagship Style Foundation 5)
+Description: 	For departments with multiple programs/sub-sites.
+Author: 		Cara Peckens
+Author URI: 	http://krieger.jhu.edu/communications/web
+Version: 		2.0
+Template: ksas_flagship_academic_f5
+*/
+
+body {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #000;
+}
+
+body {
+	-webkit-animation-duration: 0.1s;
+	-webkit-animation-name: fontfix;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0.1s;
+}
+
+@-webkit-keyframes fontfix {
+	from { opacity: 1; }
+	to { opacity: 1; }
+}
+
+.wrapper ul ul {
+	margin-left: 40px;
+}
+.panel li {
+	list-style: none;
+	margin-left: 10px;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+#page {
+	margin-top: 15px;
+}
+#main_nav ul li {
+	padding: 0 5px;
+}
+#main_nav ul li ul li {
+	padding: 0;
+}
+#main_nav ul li ul li {padding:0;}
+.nav-bar > li.has-flyout > a:first-child {
+	padding-right: 0;
+}
+
+.nav-bar > li { float: left; display: block; position: relative; padding: 0; margin: 0;  line-height: 72px;  }
+.nav-bar > li.active { background: #255682; }
+.nav-bar > li.active > a { color: white; cursor: default; }
+.nav-bar > li.active:hover { background: #255682; cursor: default; }
+.nav-bar > li:hover { background: #255682; }
+.nav-bar > li > a { color: #FFF; }
+.nav-bar > li ul { margin-bottom: 0; }
+.nav-bar > li .flyout { display: none; }
+.nav-bar > li.has-flyout > a:first-child { padding-right: 25px; position: relative; }
+.nav-bar > li.has-flyout > a:first-child:after { content: ""; display: block; width: 0; height: 0; border: none; }
+.nav-bar > li.has-flyout > a.flyout-toggle { border-left: 0 !important; position: absolute; right: 0; top: 0; padding: 20px; z-index: 2; display: block; }
+.nav-bar > li.has-flyout.is-touch > a:first-child { padding-right: 55px; }
+.nav-bar > li.has-flyout.is-touch > a.flyout-toggle { border-left: 1px dashed #666; }
+.nav-bar > li > a:first-child { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 14px; }
+.nav-bar > li > input { margin: 0 10px; }
+
+#main_nav ul .flyout { background: rgb(0,0,0); background: rgba(0,0,0,.75); padding: 0px; margin: 0; border: 1px solid #000; position: absolute; top: 60px; left: 0px; width: 300px; z-index: 40 !important; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); height: auto; /* remove margin on any first-child element */ /* remove margin on last element */ }
+#main_nav ul .flyout p { line-height: 1.2; font-size: 13px; }
+#main_nav ul .flyout *:first-child { margin-top: 0; }
+#main_nav ul .flyout *:last-child { margin-bottom: 0; }
+#main_nav ul .flyout.small { width: 166.66667px; }
+#main_nav ul .flyout.large { width: 437.5px; }
+#main_nav ul .flyout.right { left: auto; right: -2px; }
+#main_nav ul .flyout.left { right: auto; left: -2px; }
+#main_nav ul .flyout.up { bottom: auto; }
+#main_nav ul.flyout li {float:none;}
+ul.flyout, .nav-bar li ul { padding: 0; list-style: none; }
+ul.flyout li, .nav-bar li ul li { border-left: solid 3px #000; }
+ul.flyout li a, .nav-bar li ul li a { background: rgb(0,0,0);background: rgba(0,0,0,.75); border: 1px solid #000; border-width: 1px 1px 0 0; color: #FFF; display: block; font-size: 14px; height: auto; line-height: 1; padding: 15px 20px; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+ul.flyout li a:hover, .nav-bar li ul li a:hover { background: #2c2c33; background: rgba(255,255,255,.1); color: #2c2c33; }
+ul.flyout li.active, .nav-bar li ul li.active { margin-top: 0; border-top: 1px solid #4d4d4d; border-left: 4px solid #1a1a1a; }
+ul.flyout li.active a, .nav-bar li ul li.active a { background: #4d4d4d; border: none; color: #fff; height: auto; margin: 0; position: static; top: 0; -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0; box-shadow: 0 0 0; }
+
+#main_nav ul li:hover ul,
+#main_nav ul li a:hover ul,
+#main_nav ul li.current_page_ancestor ul,
+#main_nav ul li.current_page_item ul {
+	visibility:visible;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,.75);
+	width: 300px;
+	min-height:auto;
+	-webkit-border-radius:  0px;
+	-moz-border-radius: 	0px;
+	border-radius: 			0px;
+	z-index: 1;
+}
+
+#main_nav ul li:hover ul li a:hover,
+#main_nav ul li a:hover ul li a:hover {
+	background: none;
+	color:#FFF;
+}
+
+
+#main_nav ul li ul li.current_page_item a,
+#main_nav ul li ul li.current_page_ancestor a,
+#main_nav ul li ul li.current_page_parent a,
+#main_nav ul li ul li a:hover {
+	color:#FFF;
+}
+#quicklinks li.has-flyout {
+	line-height: 38px;
+}
+
+#quicklinks ul.flyout li a, #quicklinks .nav-bar li ul li a {
+	border: 1px solid #CCC;
+}
+
+#sidebar ul.sub-menu {display: none;}
+
+#main_nav ul li.current_page_ancestor ul,
+#main_nav ul li.current_page_item ul {
+	display: none;
+}
+li.external a::after {
+	line-height: normal;
+	float: none;
+}
+.wrapper {
+	margin-top: 12px;
+}
+
+#sidebar li.external a::after {
+	color: #005eb8;
+}
+
+#main_nav .exclude {
+	display: none !important;
+}
+
+/*********HEADER*************/
+
+#navs { background: #2c2c33;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;}
+
+#site_title {
+	background:	rgb(51, 102, 153);
+	background: rgba(51, 102, 153, .9);
+	z-index: 10;
+}
+#site_title h1 {
+	margin: 10px 0 0 0;
+	line-height: 1.1em;
+}
+
+#site_title h1 span.small {
+	display: block;
+	line-height: 1em;
+}
+.program {
+	z-index: 10;
+}
+.program select {
+	margin: 15px 0px 0px 9px;
+	height: 27px;
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	background: rgba(0,0,0,.1);
+	color: #FFF;
+	font: 18px 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
+	font-family: 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-indent: 15px;
+	padding: 3px 0;
+	white-space: normal;
+	letter-spacing: 2px;
+}
+#mobile-header {
+	margin-bottom: 40px;
+}
+#mobile-header .program select {
+	margin: 0;
+}
+#main_nav ul {
+/*	padding: 0 0 0 240px;
+	margin: -42px 0 0 0;*/
+	zoom: 1;
+}
+
+ul.flyout li, .nav-bar li ul li {
+	border-left: none;
+}
+
+/*********SLIDER*************/
+#slider {
+	min-height: 285px;
+}
+
+.orbit-slide {
+	width: 100%;
+}
+
+#caption.vertical {
+	min-height: 285px;
+	padding: 0 30px;
+	margin-left: 68.2%;
+}
+
+.slide summary {
+	background: #2c2c33;
+	background: rgba(51,51,51, .7)
+}
+/*********HOMEPAGE*************/
+body.site-31 #site_title.grll h1{
+	margin: -10px 0 0 0;
+	line-height: 1em;
+	font-size: 36px;
+}
+.homepage_bg, #program-tab {
+	background: #2c2c33;
+	background: rgba(0,0,0,.9)
+}
+
+.homepage_bg .wrapper {
+	background: none;
+	color: #fff;
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.homepage_bg .wrapper p {
+	color: #FFF;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.homepage_bg .button {
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.homepage_bg #sidebar {
+	background: #FFF;
+	margin-top: 10px;
+}
+
+#caption.vertical .middle {
+	margin-top: 25%;
+}
+
+#sidebar #calendar_container,
+.widget article {
+	padding: 3px 20px;
+}
+
+#widget {
+	margin-bottom: 25px;
+}
+
+#sidebar article h5 {
+	padding-left: 0;
+}
+
+h5.archive {
+	padding-right:30px;
+	font-size: 14px;
+}
+
+#program-tab {
+	margin-top: -35px;
+	zoom: 0;
+}
+
+#program-tab h4 {
+	color: #FFF;
+	margin-left: 15px;
+}
+
+.textwidget {
+	margin: 0;
+}
+/*********COLORS-BG*************/
+body #sidebar_header, body #site_title, body #main_nav ul, body #logo_nav, body .widget_title, #main_nav ul li ul li:hover, #mobile-header {
+	background: #2c2c33;
+}
+
+body.french #sidebar_header, body.french #site_title, body.french #main_nav ul, body.french #logo_nav, body.french .widget_title, .button.french, body.french #main_nav ul li ul li:hover, body.french #mobile-header, #french {
+	background: #005eb8;
+}
+
+body.german #sidebar_header, body.german #site_title, body.german #main_nav ul, body.german #logo_nav, body.german .widget_title, .button.german, body.german #main_nav ul li ul li:hover, body.german #mobile-header, #german {
+	background: #007a53;
+}
+
+body.hebrew #sidebar_header, body.hebrew #site_title, body.hebrew #main_nav ul, body.hebrew #logo_nav, body.hebrew .widget_title, .button.hebrew, body.hebrew #main_nav ul li ul li:hover, body.hebrew #mobile-header, #hebrew{
+	background: #8a2a2b;
+}
+
+body.italian #sidebar_header, body.italian #site_title, body.italian #main_nav ul, body.italian #logo_nav, body.italian .widget_title, .button.italian, body.italian #main_nav ul li ul li:hover, body.italian #mobile-header, #italian {
+	background: #ba920a;
+}
+
+body.portuguese #sidebar_header, body.portuguese #site_title, body.portuguese #main_nav ul, body.portuguese #logo_nav, body.portuguese .widget_title, .button.portuguese, body.portuguese #main_nav ul li ul li:hover, body.portuguese #mobile-header, #portuguese {
+	background: #00ab8e;
+}
+
+body.spanish #sidebar_header, body.spanish #site_title, body.spanish #main_nav ul, body.spanish #logo_nav, body.spanish .widget_title, .button.spanish, body.spanish #main_nav ul li ul li:hover, body.spanish #mobile-header, #spanish {
+	background: #24135f;
+}
+/*********COLORS-FONTS*************/
+body h1, body h2, body h3, body h4, body h5, body h6, body .semibold, body table thead tr th, body table tfoot tr td, body .sidebar_bg ul.nav li a, body #sidebar li a {
+	color: #2c2c33;
+}
+
+body.home h4, body.home h5, body.home h6 {
+	color: #FFF;
+}
+body.french h1, body.french h2, body.french h3, body.french h4, body.french h5, body.french h6, body.french .semibold, body.french table thead tr th, body.french table tfoot tr td, body.french a, body.french .sidebar_bg ul.nav li a, body.french #sidebar li a {
+	color: #005eb8;
+}
+
+body.german h1, body.german h2, body.german h3, body.german h4, body.german h5, body.german h6, body.german .semibold, body.german table thead tr th, body.german table tfoot tr td, body.german a, body.german .sidebar_bg ul.nav li a, body.german #sidebar li a {
+	color: #007a53;
+}
+
+body.hebrew h1, body.hebrew h2, body.hebrew h3, body.hebrew h4, body.hebrew h5, body.hebrew h6, body.hebrew .semibold, body.hebrew table thead tr th, body.hebrew table tfoot tr td, body.hebrew a, body.hebrew .sidebar_bg ul.nav li a, body.hebrew #sidebar li a {
+	color: #8a2a2b;
+}
+
+body.italian h1, body.italian h2, body.italian h3, body.italian h4, body.italian h5, body.italian h6, body.italian .semibold, body.italian table thead tr th, body.italian table tfoot tr td, body.italian a, body.italian .sidebar_bg ul.nav li a, body.italian #sidebar li a {
+	color: #ba920a;
+}
+
+body.portuguese h1, body.portuguese h2, body.portuguese h3, body.portuguese h4, body.portuguese h5, body.portuguese h6, body.portuguese .semibold, body.portuguese table thead tr th, body.portuguese table tfoot tr td, body.portuguese a, body.portuguese .sidebar_bg ul.nav li a, body.portuguese #sidebar li a {
+	color: #00ab8e;
+}
+
+body.spanish h1, body.spanish h2, body.spanish h3, body.spanish h4, body.spanish h5, body.spanish h6, body.spanish .semibold, body.spanish table thead tr th, body.spanish table tfoot tr td, body.spanish a, body.spanish .sidebar_bg ul.nav li a, body.spanish #sidebar li a {
+	color: #24135f;
+}
+
+/*********COLORS-NAVIGATION*************/
+#main_nav ul li:hover, #main_nav li.active, #main_nav li.current_page_parent, #main_nav li.current_page_ancestor, #main_nav ul li.current_page_item, #main_nav ul li:hover ul, #main_nav ul li a:hover ul, #main_nav ul li.current_page_ancestor ul, #main_nav ul li.current_page_item ul, #main_nav ul .flyout {
+	background: #000;
+}
+
+body.french #main_nav ul li:hover, body.french #main_nav li.active, body.french #main_nav li.current_page_parent, body.french #main_nav li.current_page_ancestor, body.french #main_nav ul li.current_page_item, body.french #main_nav ul li:hover ul, body.french #main_nav ul li a:hover ul, body.french #main_nav ul li.current_page_ancestor ul, body.french #main_nav ul li.current_page_item ul, body.french #main_nav ul .flyout, body.french ul.flyout li a  {
+	background: #224466;
+}
+
+body.german #main_nav ul li:hover, body.german #main_nav li.active, body.german #main_nav li.current_page_parent, body.german #main_nav li.current_page_ancestor, body.german #main_nav ul li.current_page_item, body.german #main_nav ul li:hover ul, body.german #main_nav ul li a:hover ul, body.german #main_nav ul li.current_page_ancestor ul, body.german #main_nav ul li.current_page_item ul, body.german #main_nav ul .flyout, body.german ul.flyout li a {
+	background: #003333;
+}
+
+body.hebrew #main_nav ul li:hover, body.hebrew #main_nav li.active, body.hebrew #main_nav li.current_page_parent, body.hebrew #main_nav li.current_page_ancestor, body.hebrew #main_nav ul li.current_page_item, body.hebrew #main_nav ul li:hover ul, body.hebrew #main_nav ul li a:hover ul, body.hebrew #main_nav ul li.current_page_ancestor ul, body.hebrew #main_nav ul li.current_page_item ul, body.hebrew #main_nav ul .flyout, body.hebrew ul.flyout li a {
+	background: #381109;
+}
+
+body.italian #main_nav ul li:hover, body.italian #main_nav li.active, body.italian #main_nav li.current_page_parent, body.italian #main_nav li.current_page_ancestor, body.italian #main_nav ul li.current_page_item, body.italian #main_nav ul li:hover ul, body.italian #main_nav ul li a:hover ul, body.italian #main_nav ul li.current_page_ancestor ul, body.italian #main_nav ul li.current_page_item ul, body.italian #main_nav ul .flyout, body.italian ul.flyout li a {
+	background: #876907;
+}
+
+body.portuguese #main_nav ul li:hover, body.portuguese #main_nav li.active, body.portuguese #main_nav li.current_page_parent, body.portuguese #main_nav li.current_page_ancestor, body.portuguese #main_nav ul li.current_page_item, body.portuguese #main_nav ul li:hover ul, body.portuguese #main_nav ul li a:hover ul, body.portuguese #main_nav ul li.current_page_ancestor ul, body.portuguese #main_nav ul li.current_page_item ul, body.portuguese #main_nav ul .flyout, body.portuguese ul.flyout li a {
+	background: #226666;
+}
+
+body.spanish #main_nav ul li:hover, body.spanish #main_nav li.active, body.spanish #main_nav li.current_page_parent, body.spanish #main_nav li.current_page_ancestor, body.spanish #main_nav ul li.current_page_item, body.spanish #main_nav ul li:hover ul, body.spanish #main_nav ul li a:hover ul, body.spanish #main_nav ul li.current_page_ancestor ul, body.spanish #main_nav ul li.current_page_item ul, body.spanish #main_nav ul .flyout, body.spanish ul.flyout li a {
+	background: #1a1a33;
+}
+
+/*********COLORS-SLIDER*************/
+.slide summary {
+	background: #000;
+	background: rgba(0,0,0,.8)
+;}
+/*********OVERRIDES*************/
+.sidebar_bg {
+	background: #cecece;
+background: -moz-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(255,255,255,1) 66.1%, rgba(206,206,206,1) 66.2%, rgba(206,206,206,1) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(252,252,252,1)), color-stop(66.1%,rgba(255,255,255,1)), color-stop(66.2%,rgba(206,206,206,1)), color-stop(100%,rgba(206,206,206,1)));
+background: -webkit-linear-gradient(left, rgba(252,252,252,1) 0%,rgba(255,255,255,1) 66.1%,rgba(206,206,206,1) 66.2%,rgba(206,206,206,1) 100%);
+background: -o-linear-gradient(left, rgba(252,252,252,1) 0%,rgba(255,255,255,1) 66.1%,rgba(206,206,206,1) 66.2%,rgba(206,206,206,1) 100%);
+background: -ms-linear-gradient(left, rgba(252,252,252,1) 0%,rgba(255,255,255,1) 66.1%,rgba(206,206,206,1) 66.2%,rgba(206,206,206,1) 100%);
+background: linear-gradient(to right, rgba(252,252,252,1) 0%,rgba(255,255,255,1) 66.1%,rgba(206,206,206,1) 66.2%,rgba(206,206,206,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fcfcfc', endColorstr='#cecece',GradientType=1 );
+	margin-bottom: 60px;
+}
+
+.button {
+	margin-right: 7px;
+}
+
+#site_title h1 {
+	margin: 10px 0 0 0;
+	line-height: 1.1em;
+	color: #FFF !important;
+}
+
+.grey {color: #ccc !important;}
+
+.white {color: #FFF !important;}
+
+#main_nav ul li.current_page_item {background: none !important;}
+
+#menu-footer-links a { color: #FFF !important;}
+
+body.site-31 {
+	background-image: url('assets/images/bg_grll_main.jpg');
+}
+body.site-31.home {
+	background-image: url('assets/images/bg_grll_home.jpg');
+}
+body.site-31.french {
+	background-image: url('assets/images/bg_french.jpg');
+}
+
+body.site-31.german {
+	background-image: url('assets/images/bg_german.jpg');
+}
+
+body.site-31.hebrew {
+	background-repeat: repeat;
+	background-image: url('assets/images/bg-grey-tile.jpeg');
+}
+
+body.site-31.italian {
+	background-image: url('assets/images/bg_italian.jpg');
+}
+
+body.site-31.portuguese {
+	background-image: url('assets/images/bg_portuguese.jpg');
+}
+
+body.site-31.spanish {
+	background-image: url('assets/images/bg_spanish.jpg');
+}
+
+#slider {
+background: none;
+height: inherit;
+}
+
+#caption.vertical {
+right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+.button {
+display: block;
+}
+.program select {
+	width:auto;
+}
+}
