@@ -307,7 +307,7 @@ body.hebrew #sidebar_header, body.hebrew #site_title, body.hebrew #main_nav ul, 
 }
 
 body.italian #sidebar_header, body.italian #site_title, body.italian #main_nav ul, body.italian #logo_nav, body.italian .widget_title, .button.italian, body.italian #main_nav ul li ul li:hover, body.italian #mobile-header, #italian {
-	background: #ba920a;
+	background: #cba052;
 }
 
 body.portuguese #sidebar_header, body.portuguese #site_title, body.portuguese #main_nav ul, body.portuguese #logo_nav, body.portuguese .widget_title, .button.portuguese, body.portuguese #main_nav ul li ul li:hover, body.portuguese #mobile-header, #portuguese {
@@ -338,7 +338,7 @@ body.hebrew h1, body.hebrew h2, body.hebrew h3, body.hebrew h4, body.hebrew h5, 
 }
 
 body.italian h1, body.italian h2, body.italian h3, body.italian h4, body.italian h5, body.italian h6, body.italian .semibold, body.italian table thead tr th, body.italian table tfoot tr td, body.italian a, body.italian .sidebar_bg ul.nav li a, body.italian #sidebar li a {
-	color: #ba920a;
+	color: #cba052;
 }
 
 body.portuguese h1, body.portuguese h2, body.portuguese h3, body.portuguese h4, body.portuguese h5, body.portuguese h6, body.portuguese .semibold, body.portuguese table thead tr th, body.portuguese table tfoot tr td, body.portuguese a, body.portuguese .sidebar_bg ul.nav li a, body.portuguese #sidebar li a {
@@ -367,7 +367,7 @@ body.hebrew #main_nav ul li:hover, body.hebrew #main_nav li.active, body.hebrew 
 }
 
 body.italian #main_nav ul li:hover, body.italian #main_nav li.active, body.italian #main_nav li.current_page_parent, body.italian #main_nav li.current_page_ancestor, body.italian #main_nav ul li.current_page_item, body.italian #main_nav ul li:hover ul, body.italian #main_nav ul li a:hover ul, body.italian #main_nav ul li.current_page_ancestor ul, body.italian #main_nav ul li.current_page_item ul, body.italian #main_nav ul .flyout, body.italian ul.flyout li a {
-	background: #876907;
+	background: #ba920a;
 }
 
 body.portuguese #main_nav ul li:hover, body.portuguese #main_nav li.active, body.portuguese #main_nav li.current_page_parent, body.portuguese #main_nav li.current_page_ancestor, body.portuguese #main_nav ul li.current_page_item, body.portuguese #main_nav ul li:hover ul, body.portuguese #main_nav ul li a:hover ul, body.portuguese #main_nav ul li.current_page_ancestor ul, body.portuguese #main_nav ul li.current_page_item ul, body.portuguese #main_nav ul .flyout, body.portuguese ul.flyout li a {
