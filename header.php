@@ -14,7 +14,7 @@
 
   <!-- Modernizr and Jquery Script -->
   <script async type="text/javascript" src="http://fast.fonts.com/jsapi/c5f514c7-d786-4bfb-9484-ea6c8fbd263f.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr-min.js"></script>
   <?php wp_enqueue_script('jquery', true); ?>
   <?php wp_head(); ?>
 
