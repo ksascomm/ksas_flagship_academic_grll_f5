@@ -1,0 +1,23 @@
+{
+    "name": "ksascomm/ksas_flagship_academic_grll_f5",
+    "type": "wordpress-theme",
+    "license": "GPL2",
+  	"description": "GRLL/Multi Program (Flagship Style Foundation 5)",
+  	"homepage": "http://github.com/ksascomm/ksas_flagship_academic_grll_f5",
+  	"authors": [
+      {
+      "name": "Tim Gelles",
+      "email": "ksasweb@jhu.edu",
+      "homepage": "http://krieger.jhu.edu"
+      }
+    ],
+    "keywords": [
+      "wordpress"
+    ],
+  "support": {
+    "issues": "http://krieger.jhu.edu"
+  },
+  "require": {
+        "composer/installers": "~1.0"
+    } 
+}
