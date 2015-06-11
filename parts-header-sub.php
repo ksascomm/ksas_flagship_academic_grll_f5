@@ -67,8 +67,7 @@
 						</select>
 					</div>
 					<?php
-					if (false === ( $program_menu = get_transient('menu_' . $program_slug . '_query'))) {
-										// parameter echo will return the menu instead of echoing it
+				
 						$program_menu = wp_nav_menu( array(
 							'menu' => $program_slug,
 							'menu_class' => 'nav-bar',
@@ -79,8 +78,6 @@
 							'walker' => new foundation_navigation(),
 							'depth' => 2,
 							'echo' => 0  ));
-						set_transient('menu_' . $program_slug . '_query', $program_menu, 2592000);
-					}
 
 					echo $program_menu; ?>
 				</div>
