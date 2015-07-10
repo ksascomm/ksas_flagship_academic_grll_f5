@@ -42,7 +42,7 @@
 		<div id="mobile-nav">
 				<div class="row">
 					<div class="small-12 large-4 columns centered blue_bg">
-					<div class="mobile-logo centered"><a href="http://krieger.jhu.edu">Home</a></div>
+					<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo.png" alt="jhu logo"></a></div>
 					<h2 class="white capitalize" align="center"><?php echo $program_slug . ' Program'; ?></h2>
 					</div>
 				</div>
@@ -50,10 +50,12 @@
 			<div id="desktop-nav">
 				<div class="row">
 					<div class="small-12 columns" id="logo_nav">
-						<li class="logo"><a href="http://krieger.jhu.edu" title="Krieger School of Arts & Sciences">Krieger School of Arts & Sciences</a></li>
-
-						<a href="<?php echo site_url('/') . $program_slug; ?>"><h1 class="white"><span class="small"><?php echo get_bloginfo ( 'title' ); ?></span>	<span class="capitalize">				<?php echo $program_slug . ' Program'; ?></span></h1></a>
-
+						<div class="medium-3 columns">
+							<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo.png" alt="jhu logo"></a></li>
+						</div>
+						<div class="medium-9 columns">
+							<a href="<?php echo site_url('/') . $program_slug; ?>"><h1 class="white"><span class="small"><?php echo get_bloginfo ( 'title' ); ?></span>	<span class="capitalize">				<?php echo $program_slug . ' Program'; ?></span></h1></a>
+						</div>
 					</div>
 				</div>
 				<div class="row hide-for-print" id="<?php echo $program_slug; ?>">

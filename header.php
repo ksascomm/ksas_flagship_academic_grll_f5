@@ -8,13 +8,12 @@
   <title><?php create_page_title(); ?></title>
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
   <!-- CSS Files: All pages -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/app.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
   <!-- CSS Files: Conditionals -->
 
   <!-- Modernizr and Jquery Script -->
-  <script async type="text/javascript" src="http://fast.fonts.com/jsapi/c5f514c7-d786-4bfb-9484-ea6c8fbd263f.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr-min.js"></script>
   <?php wp_enqueue_script('jquery', true); ?>
   <?php wp_head(); ?>
