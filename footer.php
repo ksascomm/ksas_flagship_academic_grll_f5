@@ -30,9 +30,13 @@
 				'walker' => new foundation_navigation() ) );
 		 ?>
 		<!-- Social Media -->
-		<nav class="small-3 columns iconfont hide-for-small" id="social-media">
-			<a href="http://facebook.com/jhuksas" title="Facebook"><span class="icon-facebook"></span></a>
-			<a href="http://vimeo.com/channels/jhuksas" title="Vimeo"><span class="icon-vimeo"></span></a>
+		<nav class="small-12 medium-4 large-2 columns" id="social-media">
+				<div class="small-6 columns">
+					<a href="http://facebook.com/jhuksas" title="Facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
+				</div>
+				<div class="small-6 columns">
+					<a href="https://www.youtube.com/user/jhuksas" title="YouTube"><i class="fa fa-youtube-square fa-3x"></i></a>
+				</div>
 		</nav>
 
 		<!-- Copyright and Address -->
