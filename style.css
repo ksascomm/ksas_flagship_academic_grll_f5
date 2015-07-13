@@ -201,6 +201,17 @@ ul.flyout li, .nav-bar li ul li {
 	border-left: none;
 }
 
+.mobile-logo img {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+#mobile-nav h2 {
+  margin-top: 1em;
+  font-size: 1.84375rem;
+}
+}
+
 /*********SLIDER*************/
 #slider {
 	min-height: 285px;
@@ -254,9 +265,9 @@ body.site-31 #site_title.grll h1{
 	margin-top: 10px;
 }
 
-#caption.vertical .middle {
+/*#caption.vertical .middle {
 	margin-top: 25%;
-}
+}*/
 
 #sidebar #calendar_container,
 .widget article {
@@ -452,6 +463,11 @@ height: inherit;
 
 #caption.vertical {
 right: 0;
+width: 31.75%;
+}
+
+.middle h3, h5 {
+	padding: 10px;
 }
 
 @media only screen and (max-width: 767px) {

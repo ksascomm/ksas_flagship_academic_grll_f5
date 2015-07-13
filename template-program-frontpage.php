@@ -72,7 +72,7 @@ if ( $slider_query->have_posts() ) : ?>
 <?php endif; ?>
 
 <div class="row sidebar_bg">
-	<div class="small-8 columns wrapper toplayer">
+	<div class="medium-12 large-8 columns wrapper toplayer">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<section>
 				<?php the_content(); ?>
