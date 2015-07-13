@@ -38,7 +38,7 @@
 		<div id="mobile-nav">
 				<div class="row">
 					<div class="small-12 large-4 columns centered blue_bg">
-						<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo.png" alt="jhu logo"></a></div>
+						<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="jhu logo"></a></div>
 							<h2 class="white" align="center"><?php echo get_bloginfo( 'title' ); ?></h2>
 					</div>
 				</div>
