@@ -205,6 +205,10 @@ ul.flyout li, .nav-bar li ul li {
   padding: 10px;
 }
 
+#mobile-nav {
+	padding-top: 0%;
+}
+
 @media only screen and (max-width: 767px) {
 #mobile-nav h2 {
   margin-top: 1em;
@@ -328,6 +332,14 @@ body.portuguese #sidebar_header, body.portuguese #site_title, body.portuguese #m
 body.spanish #sidebar_header, body.spanish #site_title, body.spanish #main_nav ul, body.spanish #logo_nav, body.spanish .widget_title, .button.spanish, body.spanish #main_nav ul li ul li:hover, body.spanish #mobile-header, #spanish {
 	background: #24135f;
 }
+
+body.media #sidebar_header, body.media #site_title, body.media #main_nav ul, body.media #logo_nav, body.media .widget_title, .button.media, body.media #main_nav ul li ul li:hover, body.media #mobile-header, #media, div[id='media literacy'] {
+	background: #cc6600;
+}
+
+body.media-literacy #sidebar_header, body.media-literacy #site_title, body.media-literacy #main_nav ul, body.media-literacy #logo_nav, body.media-literacy .widget_title, .button.media-literacy, body.media-literacy #main_nav ul li ul li:hover, body.media-literacy #mobile-header, #media-literacy {
+	background: #cc6600;
+}
 /*********COLORS-FONTS*************/
 body h1, body h2, body h3, body h4, body h5, body h6, body .semibold, body table thead tr th, body table tfoot tr td, body .sidebar_bg ul.nav li a, body #sidebar li a {
 	color: #2c2c33;
@@ -360,6 +372,14 @@ body.spanish h1, body.spanish h2, body.spanish h3, body.spanish h4, body.spanish
 	color: #24135f;
 }
 
+body.media h1, body.media h2, body.media h3, body.media h4, body.media h5, body.media h6, body.media .semibold, body.media table thead tr th, body.media table tfoot tr td, body.media a, body.media .sidebar_bg ul.nav li a, body.media #sidebar li a {
+	color: #cc6600;
+}
+
+body.media-literacy h1, body.media-literacy h2, body.media-literacy h3, body.media-literacy h4, body.media-literacy h5, body.media-literacy h6, body.media-literacy .semibold, body.media-literacy table thead tr th, body.media-literacy table tfoot tr td, body.media-literacy a, body.media-literacy .sidebar_bg ul.nav li a, body.media-literacy #sidebar li a {
+	color: #cc6600;
+}
+
 /*********COLORS-NAVIGATION*************/
 #main_nav ul li:hover, #main_nav li.active, #main_nav li.current_page_parent, #main_nav li.current_page_ancestor, #main_nav ul li.current_page_item, #main_nav ul li:hover ul, #main_nav ul li a:hover ul, #main_nav ul li.current_page_ancestor ul, #main_nav ul li.current_page_item ul, #main_nav ul .flyout {
 	background: #000;
@@ -387,6 +407,14 @@ body.portuguese #main_nav ul li:hover, body.portuguese #main_nav li.active, body
 
 body.spanish #main_nav ul li:hover, body.spanish #main_nav li.active, body.spanish #main_nav li.current_page_parent, body.spanish #main_nav li.current_page_ancestor, body.spanish #main_nav ul li.current_page_item, body.spanish #main_nav ul li:hover ul, body.spanish #main_nav ul li a:hover ul, body.spanish #main_nav ul li.current_page_ancestor ul, body.spanish #main_nav ul li.current_page_item ul, body.spanish #main_nav ul .flyout, body.spanish ul.flyout li a {
 	background: #1a1a33;
+}
+
+body.media #main_nav ul li:hover, body.media #main_nav li.active, body.media #main_nav li.current_page_parent, body.media #main_nav li.current_page_ancestor, body.media #main_nav ul li.current_page_item, body.media #main_nav ul li:hover ul, body.media #main_nav ul li a:hover ul, body.media #main_nav ul li.current_page_ancestor ul, body.media #main_nav ul li.current_page_item ul, body.media #main_nav ul .flyout, body.media ul.flyout li a {
+	background: #B34D00;
+}
+
+body.media-literacy #main_nav ul li:hover, body.media-literacy #main_nav li.active, body.media-literacy #main_nav li.current_page_parent, body.media-literacy #main_nav li.current_page_ancestor, body.media-literacy #main_nav ul li.current_page_item, body.media-literacy #main_nav ul li:hover ul, body.media-literacy #main_nav ul li a:hover ul, body.media-literacy #main_nav ul li.current_page_ancestor ul, body.media-literacy #main_nav ul li.current_page_item ul, body.media-literacy #main_nav ul .flyout, body.media-literacy ul.flyout li a {
+	background: #B34D00;
 }
 
 /*********COLORS-SLIDER*************/
@@ -441,7 +469,7 @@ body.site-31.german {
 
 body.site-31.hebrew {
 	background-repeat: repeat;
-	background-image: url('assets/images/bg-grey-tile.jpeg');
+	background-image: url('assets/images/bg_hebrew3.jpg');
 }
 
 body.site-31.italian {
