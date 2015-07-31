@@ -26,11 +26,11 @@
 				'menu_class' => 'inline-list hide-for-small',
 				'fallback_cb' => 'foundation_page_menu',
 				'container' => 'nav',
-				'container_class' => 'small-6 columns',
+				'container_class' => 'small-5 columns',
 				'walker' => new foundation_navigation() ) );
 		 ?>
 		<!-- Social Media -->
-		<nav class="small-12 medium-4 large-2 columns" id="social-media">
+		<nav class="small-4 large-2 columns" id="social-media">
 				<div class="small-6 columns">
 					<a href="http://facebook.com/jhuksas" title="Facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
 				</div>
