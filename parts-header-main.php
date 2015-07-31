@@ -10,7 +10,7 @@
 
 			$count_programs =  count($programs); ?>
 	<div class="row hide-for-print">
-					<div id="search-bar" class="small-12 large-5 large-offset-7 columns">
+					<div id="search-bar" class="small-12 medium-5 medium-offset-7 columns">
 						<div class="row">
 							<div class="small-6 columns">
 							<?php $theme_option = flagship_sub_get_global_options();
