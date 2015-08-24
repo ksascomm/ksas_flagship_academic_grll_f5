@@ -8,7 +8,6 @@
   <title><?php create_page_title(); ?></title>
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
   <!-- CSS Files: All pages -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/app.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
   <!-- CSS Files: Conditionals -->
