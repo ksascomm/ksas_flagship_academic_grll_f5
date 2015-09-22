@@ -273,6 +273,10 @@ body.site-31 #site_title.grll h1{
 	margin-top: 25%;
 }*/
 
+#widget #calendar_container iframe {
+	height: 378px!important;
+}
+
 #sidebar #calendar_container,
 .widget article {
 	padding: 3px 20px;
