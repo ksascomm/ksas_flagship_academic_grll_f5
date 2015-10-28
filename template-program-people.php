@@ -8,7 +8,7 @@ Template Name: Program People Directory
 	$theme_option = flagship_sub_get_global_options();
 	$program_slug = get_the_program_slug($post);
 	$roles = get_terms('role', array(
-						'orderby' 		=> 'id',
+						'orderby' 		=> 'slug',
 						'order'			=> 'ASC',
 						'hide_empty'    => true,
 						));
@@ -66,7 +66,7 @@ Template Name: Program People Directory
 						'posts_per_page' => '-1'));
 			}
 				if ($people_query->have_posts()) : ?>
-				<li class="person sub-head quicksearch-match <?php echo $filter_classes . ' ' . $role_classes; ?>"><h2 class="black capitalize"><?php echo $role_name; ?></h2></li>
+				<li class="person sub-head quicksearch-match <?php echo $role->slug; ?>"><h2 class="black capitalize"><?php echo $role_name; ?></h2></li>
 				<?php while ($people_query->have_posts()) : $people_query->the_post(); ?>
 					<?php if ( get_post_meta($post->ID, 'ecpt_bio', true) ) { get_template_part('parts','hasbio-loop'); } else { get_template_part('parts', 'nobio-loop'); } ?>
 		<?php endwhile; endif; } wp_reset_postdata(); ?>

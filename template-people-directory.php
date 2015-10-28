@@ -55,7 +55,7 @@ Template Name: People Directory
 				set_transient( 'people_query_' . $role_slug, $people_query, 2592000 );
 			} 				        	
 				if ($people_query->have_posts() ) : ?>	
-				<li class="person sub-head quicksearch-match"><h2 class="black capitalize"><?php echo $role_name; ?></h2></li>
+				<li class="person sub-head quicksearch-match <?php echo $role->slug; ?>"><h2 class="black capitalize"><?php echo $role_name; ?></h2></li>
 				<?php while ($people_query->have_posts()) : $people_query->the_post(); ?>
 					<?php if ( get_post_meta($post->ID, 'ecpt_bio', true) ) { get_template_part('parts','hasbio-loop'); } else { get_template_part('parts', 'nobio-loop'); } ?>
 				<?php endwhile; endif; } } wp_reset_postdata(); ?>
