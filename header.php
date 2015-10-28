@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta http-equiv="cache-control" content="public">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?php create_page_title(); ?></title>
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
   <!-- CSS Files: All pages -->
