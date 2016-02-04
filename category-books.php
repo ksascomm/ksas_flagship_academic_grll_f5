@@ -5,7 +5,7 @@
 	<div class="small-12 columns">
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
 		<section class="content">
-			<h2 class="capitalize"><?php echo $program_slug; ?> Faculty Books</h2>
+			<h1 class="page-title capitalize"><?php echo $program_slug; ?> Faculty Books</h1>
 			<?php
 			 if ( have_posts() ) : while (have_posts()) : the_post(); ?>
 					<?php if ( has_post_thumbnail()) { ?>

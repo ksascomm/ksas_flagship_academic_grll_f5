@@ -30,7 +30,7 @@ Template Name: People Directory
 <div class="row wrapper radius10">
 	<section class="row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<h2><?php the_title();?></h2>
+			<h1 class="page-title"><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
 		<?php $theme_option = flagship_sub_get_global_options();
 				if ( $theme_option['flagship_sub_directory_search']  == '1' ) { get_template_part('parts', 'directory-search'); } ?>

@@ -20,7 +20,7 @@ Template Name: Faculty Books
 	<div class="small-12 columns">
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
 		<section class="content">
-			<h2><?php the_title(); ?></h2>
+			<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php the_content(); ?>
 			<div class="row">
 				<div class="small-12 columns">

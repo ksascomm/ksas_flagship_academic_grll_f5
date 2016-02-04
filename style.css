@@ -488,6 +488,14 @@ body.site-31.spanish {
 	background-image: url('assets/images/bg_spanish.jpg');
 }
 
+.person a.field {
+	color: inherit;
+}
+
+.person h4.no-margin a {
+	color: inherit;
+}
+
 #slider {
 background: none;
 height: inherit;

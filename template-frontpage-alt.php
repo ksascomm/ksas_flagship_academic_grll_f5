@@ -58,8 +58,8 @@ if ( $slider_query->have_posts() ) : ?>
 		<div class="slide row">
 		<summary class="large-4 large-offset-8 small-12 columns  vertical" id="caption">
 				<div class="middle">
-					<h3 class="white"><?php the_title(); ?></h3>
-					<h5 class="white italic"><?php echo get_the_content(); ?></h5>
+					<h1 class="white"><?php the_title(); ?></h1>
+					<p class="white italic"><?php echo get_the_content(); ?></p>
 				</div>
 		</summary>
 		</div>
@@ -78,7 +78,7 @@ if ( $slider_query->have_posts() ) : ?>
 	</div>
 	<div class="large-8 small-12 columns wrapper toplayer">
 		<div class="row">
-			<div class="twelve columns">
+			<div class="small-12 columns">
 				<?php foreach ($program_slugs as $program_slug) { ?>
 					<div class="button <?php echo $program_slug; ?>"><a href="<?php echo site_url() . '/' . $program_slug; ?>"><?php echo $program_slug; ?></a></div>
 				<?php } ?>

@@ -61,8 +61,8 @@ if ( $slider_query->have_posts() ) : ?>
 		<div class="slide row">
 		<summary class="small-4 small-offset-8 columns vertical" id="caption">
 				<div class="middle">
-					<h3 class="white"><?php the_title(); ?></h3>
-					<h5 class="white italic"><?php echo get_the_content(); ?></h5>
+					<h1 class="white"><?php the_title(); ?></h1>
+					<p class="white italic"><?php echo get_the_content(); ?></p>
 				</div>
 		</summary>
 		</div>
@@ -83,22 +83,22 @@ if ( $slider_query->have_posts() ) : ?>
 		<h4 class="capitalize"><?php echo $program_slug . ' ' . $theme_option['flagship_sub_feed_name']; ?></h4>
 		<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 		<div class="row">
-		<section class="small-12 columns">
+			<article class="small-12 columns news-item">
 				<a href="<?php the_permalink(); ?>">
-					<h6><?php the_date(); ?></h6>
-					<h5 class="black"><?php the_title();?></h5>
+					<h2 class="uppercase"><?php the_date(); ?></h2>
+					<h1 class="black"><?php the_title();?></h1>
 					<?php if ( has_post_thumbnail()) { ?>
 						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
 					<?php } ?>
 					<?php the_excerpt(); ?>
 				</a>
 				<hr>
-		</section>
+			</article>
 		</div>
 
 		<?php endwhile; ?>
 		<div class="row">
-		<a href="<?php echo site_url('/program/') . $program_slug; ?>"><h5 class="black">View More <?php echo $theme_option['flagship_sub_feed_name']; ?></h5></a>
+			<a href="<?php echo site_url('/program/') . $program_slug; ?>"><h5 class="black">View More <?php echo $theme_option['flagship_sub_feed_name']; ?></h5></a>
 		</div>
 		<?php endif; ?>
 

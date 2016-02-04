@@ -32,9 +32,9 @@ Template Name: Program People Directory
 <div class="row wrapper radius10">
 <div class="small-12 columns">
 	<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
-	<section class="row">
+	<section class="content row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<h2><?php the_title();?></h2>
+			<h1 class="page-title"><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
 		<div id="fields_search">
 			<form action="#">
@@ -72,14 +72,14 @@ Template Name: Program People Directory
 		<?php endwhile; endif; } wp_reset_postdata(); ?>
 		<!-- Page Content -->
 
-	<?php if ( $theme_option['flagship_sub_directory_search']  == '1' ) { ?>
-	<div class="row" id="noresults">
-		<div class="small-4 small-centered columns">
+		<?php if ( $theme_option['flagship_sub_directory_search']  == '1' ) { ?>
+		<div class="row" id="noresults">
+			<div class="small-4 small-centered columns">
+			</div>
 		</div>
-	</div>
-	<?php } ?>
-</ul>
-</section>
+			<?php } ?>
+		</ul>
+	</section>
 	<div class="row">
 		<div class="small-12 columns">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();  the_content(); endwhile; endif; ?>
