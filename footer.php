@@ -31,12 +31,12 @@
 		 ?>
 		<!-- Social Media -->
 		<nav class="small-4 large-2 columns" id="social-media">
-				<div class="small-6 columns">
-					<a href="http://facebook.com/jhuksas" title="Facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
-				</div>
-				<div class="small-6 columns">
-					<a href="https://www.youtube.com/user/jhuksas" title="YouTube"><i class="fa fa-youtube-square fa-3x"></i></a>
-				</div>
+			<div class="small-6 columns">
+				<a href="http://facebook.com/jhuksas" title="Facebook"><span class="fa fa-facebook-official fa-3x"></span><span class="screen-reader-text">Facebook</span></a>
+			</div>
+			<div class="small-6 columns">
+				<a href="https://www.youtube.com/user/jhuksas" title="YouTube"><span class="fa fa-youtube-square fa-3x"></span><span class="screen-reader-text">YouTube</span></a>
+			</div>
 		</nav>
 
 		<!-- Copyright and Address -->
