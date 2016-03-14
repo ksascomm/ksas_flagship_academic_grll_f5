@@ -9,32 +9,7 @@
 					));
 
 			$count_programs =  count($programs); ?>
-	<div class="row hide-for-print">
-					<div id="search-bar" class="small-12 medium-5 medium-offset-7 columns">
-						<div class="row">
-							<div class="small-6 columns">
-							<?php $theme_option = flagship_sub_get_global_options();
-									$collection_name = $theme_option['flagship_sub_search_collection'];
-							?>
 
-							<form method="GET" action="<?php echo site_url('/search'); ?>">
-								<input type="submit" class="icon-search" value="&#xe004;" />
-								<input type="text" name="q" placeholder="Search this site" />
-								<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
-							</form>
-							</div>
-								<?php wp_nav_menu( array(
-									'theme_location' => 'search_bar',
-									'menu_class' => '',
-									'fallback_cb' => 'foundation_page_menu',
-									'container' => 'div',
-									'container_id' => 'search_links',
-									'container_class' => 'small-6 columns links inline',
-									'depth' => 1,
-									'items_wrap' => '%3$s', )); ?>
-						</div>
-					</div>	<!-- End #search-bar	 -->
-		</div>
 			<div id="mobile-nav" class="blue_bg">
 				<div class="row">
 					<div class="small-12 large-4 columns centered">
@@ -44,6 +19,7 @@
 				</div>
 			</div>
 			<div id="desktop-nav">
+			<?php get_template_part( 'parts', 'offcanvas' ); ?>
 				<div class="row">
 					<div class="small-12 columns" id="logo_nav">
 				<div class="medium-3 columns">
