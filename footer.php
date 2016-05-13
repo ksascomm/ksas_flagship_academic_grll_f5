@@ -19,16 +19,16 @@
 
 			//Return to current site
 			if ( $theme_option['flagship_sub_quicklinks']  == '1' ) { restore_current_blog(); }
-
-			//Footer Links
-			 wp_nav_menu( array(
-				'theme_location' => 'footer_links',
-				'menu_class' => 'inline-list hide-for-small',
-				'fallback_cb' => 'foundation_page_menu',
-				'container' => 'nav',
-				'container_class' => 'small-5 columns',
-				'walker' => new foundation_navigation() ) );
 		 ?>
+
+		<!-- Footer Links -->
+		<nav class="medium-5 columns">
+			<ul id="menu-footer-links" class="inline-list hide-for-small-only" role="menu">
+				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/about/jobs/">Employment</a></li>
+				<li role="menuitem"><a href="http://krieger.jhu.edu/communications-office/">Communications Office</a></li>
+				<li role="menuitem"><a href="http://webapps.jhu.edu/jhuniverse/administration/emergency_weather_security_information/">Emergency Info</a></li>
+			</ul>
+		</nav>
 		<!-- Social Media -->
 		<nav class="small-4 large-2 columns" id="social-media">
 			<div class="small-6 columns">
