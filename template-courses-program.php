@@ -97,7 +97,7 @@ Template Name: ISIS Courses (by Program)
           CURLOPT_TIMEOUT         =>  60,
           CURLOPT_CONNECTTIMEOUT  =>  60,
       ));
-      //$curl->cache($cache_dir, 2592000);
+      $curl->cache($cache_dir, 2592000);
       $curl->get($course_data, 'display_courses');
       
     }
