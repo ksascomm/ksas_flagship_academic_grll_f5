@@ -51,7 +51,7 @@ Template Name: ISIS Courses
         // show everything
         echo '<dd class="accordion-navigation ' . $term . '"><a href="#course' . $clean_course_number . '"><h5><span class="course-number">' . $course_number . '</span> - ' . $title . '<i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i></h5></a>';
         echo '<div id="course' . $clean_course_number . '" class="content"><p>' . $description . '</p>';
-        echo '<p><b>Credits: </b>' . $credits . '<br><b>Instructor: </b>' . $instructor . '<br><b>Term: </b>' . $term . '<br><b>Meetings: </b>' . $meetings . '<br><b>Status: </b>' . $status .'</p>';
+        echo '<p><strong>Credits: </strong>' . $credits . '<br><strong>Instructor: </strong>' . $instructor . '<br><strong>Term: </strong>' . $term . '<br><strong>Meetings: </strong>' . $meetings . '<br><strong>Status: </strong>' . $status .'</p>';
         echo '</div></dd>';
 
     }
