@@ -36,6 +36,7 @@
 		</div>
 		<div class="row hide-for-print" id="<?php echo $program_slug; ?>">
 			<div class="small-3 columns program">
+				<label for="program_switch" class="screen-reader-text">Select Program</label>
 				<select id="program_switch">
 					<option>Switch Program &#9662;</option>
 			<option value="<?php echo $home_url; ?>">Department Home</option>

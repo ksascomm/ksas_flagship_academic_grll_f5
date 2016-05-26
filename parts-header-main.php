@@ -33,6 +33,7 @@
 				</div>
 				<div class="row hide-for-print" id="navs">
 					<div class="small-3 columns program">
+						<label for="program_switch" class="screen-reader-text">Select Program</label>
 						<select id="program_switch">
 							<option>Select Program &#9662;</option>
 							<option value="<?php echo $home_url; ?>">Department Home</option>
@@ -42,7 +43,7 @@
 						</select>
 					</div>
 					<?php wp_nav_menu( array(
-							'theme_location' => 'main_nav',
+					'theme_location' => 'main_nav',
 					'menu_class' => 'nav-bar',
 					'container' => 'nav',
 					'container_id' => 'main_nav',
