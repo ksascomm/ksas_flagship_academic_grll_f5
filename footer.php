@@ -26,7 +26,7 @@
 			<ul id="menu-footer-links" class="inline-list hide-for-small-only" role="menu">
 				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/about/jobs/">Employment</a></li>
 				<li role="menuitem"><a href="http://krieger.jhu.edu/communications-office/">Communications Office</a></li>
-				<li role="menuitem"><a href="http://webapps.jhu.edu/jhuniverse/administration/emergency_weather_security_information/">Emergency Info</a></li>
+				<li role="menuitem"><a href="https://www.jhu.edu/alert/">Emergency Alerts & Info</a></li>
 			</ul>
 		</nav>
 		<!-- Social Media -->
