@@ -39,9 +39,12 @@ Template Name: Program People Directory
 		<div id="fields_search">
 			<form action="#">
 				<fieldset class="radius10">
-					<div class="row">
-						<input type="submit" class="icon-search" placeholder="Search by name, title, and research interests" value="&#xe004;" />
-						<input type="text" name="search" id="id_search"  />
+					<div class="row">		
+						<input type="submit" class="icon-search" value="&#xe004;" />
+						<input type="text" name="search" id="id_search" placeholder="Search by name, title, and research interests"  />
+							<label for="id_search" class="screen-reader-text">
+								Search by name, title, and research interests
+							</label>
 					</div>
 				</fieldset>
 			</form>
