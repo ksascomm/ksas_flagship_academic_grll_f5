@@ -100,20 +100,18 @@ Template Name: ISIS Courses (All GRLL Depts)
 				<?php the_content(); ?>
 
 			<?php endwhile; endif;  ?>
-					<div id="fields_search">
-			<form action="#">
-				<fieldset class="radius10">
-							<div class="row filter option-set" data-filter-group="term">
-									<div class="button radio"><a href="#" data-filter="" class="selected">View All</a></div>
-									<div class="button radio"><a href="#" data-filter=".Fall">Fall 2015 Courses</a></div>
-									<div class="button radio"><a href="#" data-filter=".Intersession">Intersession 2016 Courses</a></div>
-									<div class="button radio"><a href="#" data-filter=".Spring">Spring 2016 Courses</a></div>
-									<h5 class="inline"><a href="#" class="acc_expandall">[Expand All]</a></h5>
-
-							</div>
+					<div id="fields_search" class="panel radius10">			
+						<div class="row filter option-set" data-filter-group="term">
+								<div class="button radio"><a href="#" data-filter="*" class="selected" onclick="ga('send', 'event', 'ISIS', 'Courses', 'All');">View All</a></div>
+								<div class="button radio"><a href="#" data-filter=".Summer" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Summer');">Summer 2016 Courses</a></div>
+								<div class="button radio"><a href="#" data-filter=".Fall" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Fall');">Fall 2016 Courses</a></div>
+								<h5 class="inline"><a href="#" class="acc_expandall" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Expand All');">[Expand All]</a></h5>
+						</div>
 					<div class="row">
-						<input type="submit" class="icon-search" placeholder="Search by course number, title, and keyword" value="&#xe004;" />
-						<input type="text" name="search" id="id_search"  />
+						<div class="directory-search">
+							<span class="fa fa-search fa-2x" aria-hidden="true"></span>
+						</div>
+						<input type="text" name="search" id="id_search"  placeholder="Search by course number, title, and keyword" />
 							<label for="id_search" class="screen-reader-text">
 								Search by course number, title, and keyword
 							</label>
@@ -129,8 +127,6 @@ Template Name: ISIS Courses (All GRLL Depts)
 									<div class="button radio"><a href="#" data-filter=".Spanish">Spanish</a></div>
 								</div>
 							</div>
-				</fieldset>
-			</form>
 		</div>
 
     <dl class="expander accordion courses" data-accordion>
