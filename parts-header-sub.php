@@ -39,10 +39,10 @@
 				<label for="program_switch" class="screen-reader-text">Select Program</label>
 				<select id="program_switch">
 					<option>Switch Program &#9662;</option>
-			<option value="<?php echo $home_url; ?>">Department Home</option>
-			<?php if ( $count_programs > 0 ) { foreach ( $programs as $program ) { ?>
-					<option value="<?php echo $home_url . '/' . $program->slug . '/' . $url; ?>"><?php echo $program->name; ?></option>
-			<?php } } ?>
+					<option value="<?php echo $home_url; ?>">Department Home</option>
+					<?php if ( $count_programs > 0 ) { foreach ( $programs as $program ) { ?>
+							<option value="<?php echo $home_url . '/' . $program->slug . '/' . $url; ?>"><?php echo $program->name; ?></option>
+					<?php } } ?>
 				</select>
 			</div>
 			<?php
@@ -55,6 +55,7 @@
 					'container_class' => 'small-9 columns',
 					'fallback_cb' => 'foundation_page_menu',
 					'walker' => new foundation_navigation(),
+					'items_wrap' => '<ul id="%1$s" class="%2$s" role="navigation" aria-label="Main menu">%3$s</ul>',
 					'depth' => 2,
 					'echo' => 0  ));
 

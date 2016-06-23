@@ -20,7 +20,7 @@
 								$parent_name = $parent_page->post_title;
 							?>
 							<div class="offset-gutter radius-topright" id="sidebar_header">
-								<h5 class="white">Navigation: <?php echo $parent_name ?></h5>
+								<h5 class="white">Also in <?php echo $parent_name ?></h5>
 							</div>
 							<?php
 								wp_nav_menu( array(
@@ -28,6 +28,7 @@
 									'menu_class' => 'nav',
 									'container_class' => 'offset-gutter',
 									'submenu' => $parent_name,
+									'items_wrap' => '<ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',
 								));
 							}
 						//If there is only one ancestor display a menu of children
@@ -38,7 +39,7 @@
 									'menu_class' => 'nav',
 									'fallback_cb' => 'false',
 									'container_class' => 'offset-gutter',
-									'items_wrap' =>  '<div class="radius-topright" id="sidebar_header"><h5 class="white">Navigation: ' . $page_name . '</h5></div><ul class="%2$s">%3$s</ul>',
+									'items_wrap' =>  '<div class="radius-topright" id="sidebar_header"><h5 class="white">Also in ' . $page_name . '</h5></div><ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',
 									'submenu' => $page_name,
 									'echo' => FALSE,
 								));
