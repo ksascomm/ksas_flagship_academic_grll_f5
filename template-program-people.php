@@ -36,18 +36,16 @@ Template Name: Program People Directory
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h1 class="page-title"><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
-		<div id="fields_search">
-			<form action="#">
-				<fieldset class="radius10">
-					<div class="row">		
-						<input type="submit" class="icon-search" value="&#xe004;" />
-						<input type="text" name="search" id="id_search" placeholder="Search by name, title, and research interests"  />
-							<label for="id_search" class="screen-reader-text">
-								Search by name, title, and research interests
-							</label>
-					</div>
-				</fieldset>
-			</form>
+		<div id="fields_search" class="panel radius10">
+			<div class="row">		
+				<div class="directory-search">
+					<span class="fa fa-search fa-2x" aria-hidden="true"></span>
+				</div>
+				<input type="text" name="search" id="id_search" placeholder="Search by name, title, and research interests"  /> 
+					<label for="id_search" class="screen-reader-text">
+						Search by name, title, and research interests
+					</label>
+			</div>
 		</div>
 	</section>
 
