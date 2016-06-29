@@ -514,6 +514,10 @@ width: 31.75%;
     border-bottom-color: rgba(255,255,255,0.9);
 }
 
+.content nav ul {
+    list-style-type: square;
+}
+
 @media only screen and (max-width: 767px) {
 .button {
 display: block;
