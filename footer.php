@@ -14,7 +14,7 @@
 				'fallback_cb' => 'foundation_page_menu',
 				'container' => 'nav',
 				'container_id' => 'quicklinks',
-				'container_class' => 'small-3 columns hide-for-small',
+				'container_class' => 'medium-3 columns hide-for-small',
 				'walker' => new foundation_navigation() ) );
 
 			//Return to current site
@@ -22,15 +22,16 @@
 		 ?>
 
 		<!-- Footer Links -->
-		<nav class="medium-5 columns">
+		<nav class="medium-6 columns">
 			<ul id="menu-footer-links" class="inline-list hide-for-small-only" role="menu">
+				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/sitemap">Sitemap</a></li>
 				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/about/jobs/">Employment</a></li>
 				<li role="menuitem"><a href="http://krieger.jhu.edu/communications-office/">Communications Office</a></li>
 				<li role="menuitem"><a href="https://www.jhu.edu/alert/">Emergency Alerts & Info</a></li>
 			</ul>
 		</nav>
 		<!-- Social Media -->
-		<nav class="small-4 large-2 columns" id="social-media">
+		<nav class="small-4 medium-3 large-2 columns" id="social-media">
 			<div class="small-6 columns">
 				<a href="http://facebook.com/jhuksas" title="Facebook"><span class="fa fa-facebook-official fa-3x"></span><span class="screen-reader-text">Facebook</span></a>
 			</div>
