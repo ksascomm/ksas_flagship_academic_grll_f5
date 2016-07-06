@@ -3,7 +3,7 @@
 	<div class="small-12 columns">
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false);
 		$theme_option = flagship_sub_get_global_options(); $news_query_cond = $theme_option['flagship_sub_news_query_cond']; ?>
-		<main class="content archive" role="main">
+		<main class="content archive">
 		<h1 class="page-title"><?php echo $theme_option['flagship_sub_feed_name']; ?> Archive</h1>
 		<?php
 			$paged = (get_query_var('paged')) ? (int) get_query_var('paged') : 1;
