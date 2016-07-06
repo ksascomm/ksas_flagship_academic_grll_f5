@@ -34,7 +34,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row hide-for-print" id="<?php echo $program_slug; ?>">
+		<div class="row hide-for-print" id="<?php echo $program_slug; ?>" role="navigation" aria-labelledby="main_nav">
 			<div class="small-3 columns program">
 				<label for="program_switch" class="screen-reader-text">Select Program</label>
 				<select id="program_switch">
