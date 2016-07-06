@@ -1,5 +1,5 @@
   <footer>
-  	<div class="row hide-for-print" role="navigation" aria-labelledby="quicklinks">
+  	<div class="row hide-for-print" role="navigation" aria-label="Quicklinks Menu">
   		<?php //Check Theme Options for Quicklinks setting
 	  		$theme_option = flagship_sub_get_global_options();
 	  		if ( $theme_option['flagship_sub_quicklinks']  == '1' ) {
