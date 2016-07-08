@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Sitemap Listing (Menus before Content)
+Template Name: Sitemap Listing (Menus)
 */
 ?>	
 
@@ -9,12 +9,12 @@ Template Name: Sitemap Listing (Menus before Content)
 	<div class="small-12 large-8 columns wrapper radius-left offset-topgutter">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
 		<main class="content" role="main">
-			<?php wp_nav_menu( array( 
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<h1 class="page-title"><?php the_title();?></h1>
+			    <?php wp_nav_menu( array( 
 				'theme_location' => 'main_nav', 
 				'fallback_cb' => 'foundation_page_menu', 
 				) ); ?>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<h1 class="page-title"><?php the_title();?></h1>
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>	
 		</main>
