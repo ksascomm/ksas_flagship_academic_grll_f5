@@ -98,20 +98,24 @@ if ( $slider_query->have_posts() ) : ?>
 		<?php if ( $news_query->have_posts() ) : while ($news_query->have_posts()) : $news_query->the_post(); ?>
 				<article class="row">
 					<div class="small-12 columns">
-						<a href="<?php the_permalink(); ?>">
-							<h6><?php the_date(); ?></h6>
-							<h5 class="black"><?php the_title();?></h5>
+						<h6 class="black"><?php the_date(); ?></h6>
+							<h5>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_title();?>
+								</a>
+							</h5>
 						<?php if ( has_post_thumbnail()) { ?>
 							<?php the_post_thumbnail('directory', array('class'	=> "floatleft")); ?>
 						<?php } ?>
 						<?php the_excerpt(); ?>
-						</a>
 						<hr>
 					</div>
 				</article>		
 		<?php endwhile; ?>
 			<div class="row">
-				<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"><h5 align="right" class="archive">View More <?php echo $theme_option['flagship_sub_feed_name']; ?></h5></a>
+				<h5 align="right" class="archive">
+					<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">View More <?php echo $theme_option['flagship_sub_feed_name']; ?></a>
+				</h5>
 			</div>
 		<?php endif; ?>
 		</div>
