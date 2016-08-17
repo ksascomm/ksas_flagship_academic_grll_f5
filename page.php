@@ -8,6 +8,6 @@
 			<?php endwhile; endif; ?>	
 		</main>
 	</div>	<!-- End main content (left) section -->
-<?php get_template_part('parts', 'sidebar'); ?>
+<?php get_template_part('/parts/sidebar'); ?>
 </div> <!-- End #landing -->
 <?php get_footer(); ?>

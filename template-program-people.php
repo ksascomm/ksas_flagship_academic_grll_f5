@@ -31,7 +31,7 @@ Template Name: Program People Directory
 
 <div class="row wrapper radius10">
 <div class="small-12 columns">
-	<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
+	<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
 	<section class="content row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h1 class="page-title"><?php the_title();?></h1>
@@ -69,7 +69,7 @@ Template Name: Program People Directory
 				if ($people_query->have_posts()) : ?>
 				<li class="person sub-head quicksearch-match <?php echo $role->slug; ?>"><h2 class="black capitalize"><?php echo $role_name; ?></h2></li>
 				<?php while ($people_query->have_posts()) : $people_query->the_post(); ?>
-					<?php if ( get_post_meta($post->ID, 'ecpt_bio', true) ) { get_template_part('parts','hasbio-loop'); } else { get_template_part('parts', 'nobio-loop'); } ?>
+					<?php if ( get_post_meta($post->ID, 'ecpt_bio', true) ) { get_template_part('/parts/hasbio-loop'); } else { get_template_part('/parts/nobio-loop'); } ?>
 		<?php endwhile; endif; } wp_reset_postdata(); ?>
 		<!-- Page Content -->
 

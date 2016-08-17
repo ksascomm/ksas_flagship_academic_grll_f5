@@ -18,7 +18,7 @@ Template Name: Faculty Books
 ?>
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="small-12 columns">
-		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
+		<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
 		<section class="content">
 			<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php the_content(); ?>

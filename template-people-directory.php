@@ -33,7 +33,7 @@ Template Name: People Directory
 			<h1 class="page-title"><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
 		<?php $theme_option = flagship_sub_get_global_options();
-				if ( $theme_option['flagship_sub_directory_search']  == '1' ) { get_template_part('parts', 'directory-search'); } ?>
+				if ( $theme_option['flagship_sub_directory_search']  == '1' ) { get_template_part('/parts/directory-search'); } ?>
 	</section>
 
 
@@ -57,7 +57,7 @@ Template Name: People Directory
 				if ($people_query->have_posts() ) : ?>	
 				<li class="person sub-head quicksearch-match <?php echo $role->slug; ?>"><h2 class="black capitalize"><?php echo $role_name; ?></h2></li>
 				<?php while ($people_query->have_posts()) : $people_query->the_post(); ?>
-					<?php if ( get_post_meta($post->ID, 'ecpt_bio', true) ) { get_template_part('parts','hasbio-loop'); } else { get_template_part('parts', 'nobio-loop'); } ?>
+					<?php if ( get_post_meta($post->ID, 'ecpt_bio', true) ) { get_template_part('/parts/hasbio-loop'); } else { get_template_part('/parts/nobio-loop'); } ?>
 				<?php endwhile; endif; } } wp_reset_postdata(); ?>
 				<!-- Page Content -->
 			<?php if ( $theme_option['flagship_sub_directory_search']  == '1' ) { ?>

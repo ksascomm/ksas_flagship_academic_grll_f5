@@ -21,14 +21,11 @@
   <![endif]-->
   <!-- CSS Files: Conditionals -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-  <!-- Modernizr and Jquery Script -->
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr.min.js"></script>
-  <?php wp_enqueue_script('jquery', true); ?>
+
   <?php wp_head(); ?>
 
-
-  <?php include_once("parts-analytics.php"); ?>
+  <?php include_once("analytics.php"); ?>
 </head>
 <?php $program_slug = get_the_program_slug($post); global $blog_id; $site_id = 'site-' . $blog_id; ?>
 <body <?php body_class($program_slug . ' ' . $site_id); ?> onLoad="viewport()">
-	<?php if(!empty($program_slug)) { get_template_part('parts', 'header-sub'); } else { get_template_part('parts', 'header-main'); } ?>
+	<?php if(!empty($program_slug)) { get_template_part('/parts/header-sub'); } else { get_template_part('/parts/header-main'); } ?>

@@ -3,7 +3,7 @@
 ?>
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="small-12 columns">
-		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
+		<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
 		<section class="content">
 			<h1 class="page-title capitalize"><?php echo $program_slug; ?> Faculty Books</h1>
 			<?php

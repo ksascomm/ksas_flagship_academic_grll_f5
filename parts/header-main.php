@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div id="desktop-nav">
-			<?php get_template_part( 'parts', 'offcanvas' ); ?>
+			<?php get_template_part( '/parts/offcanvas' ); ?>
 				<div class="row">
 					<div class="small-12 columns" id="logo_nav">
 				<div class="medium-3 columns">

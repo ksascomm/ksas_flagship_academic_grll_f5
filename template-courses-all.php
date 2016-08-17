@@ -93,7 +93,7 @@ Template Name: ISIS Courses (All GRLL Depts)
 
 <div class="row sidebar_bg radius10" id="page">
 	<div class="small-12 large-8 columns wrapper radius-left offset-topgutter">
-		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
+		<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
 		<section class="content">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<h1 class="page-title"><?php the_title();?></h1>
@@ -135,6 +135,6 @@ Template Name: ISIS Courses (All GRLL Depts)
 
 		</section>
 	</div>	<!-- End main content (left) section -->
-<?php locate_template('parts-sidebar.php', true, false); ?>
+<?php locate_template('parts/sidebar.php', true, false); ?>
 </div> <!-- End #landing -->
 <?php get_footer(); ?>
