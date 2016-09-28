@@ -92,7 +92,7 @@ if ( $slider_query->have_posts() ) : ?>
 		<div class="row">
 			<article class="small-12 columns news-item">
 					<a href="<?php the_permalink(); ?>">
-						<h2 class="uppercase white"><?php the_date(); ?></h2>
+						<h2 class="uppercase white"><?php the_time( get_option( 'date_format' ) ); ?></h2>
 						<h1 class="white"><?php the_title();?></h1>
 						<?php if ( has_post_thumbnail()) { ?> 
 							<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>

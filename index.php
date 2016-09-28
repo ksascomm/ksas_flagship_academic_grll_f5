@@ -34,7 +34,7 @@
 		while ($news_archive_query->have_posts()) : $news_archive_query->the_post(); ?>
 		<div class="small-10 columns">
 			<a href="<?php the_permalink(); ?>">
-				<h3 class="uppercase"><?php the_date(); ?></h3>
+				<h3 class="uppercase"><?php the_time( get_option( 'date_format' ) ); ?></h3>
 				<h2><?php the_title();?></h2>
 					<?php if ( has_post_thumbnail()) { ?> 
 						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
