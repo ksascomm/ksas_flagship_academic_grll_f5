@@ -19,7 +19,7 @@ Template Name: Faculty Books
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="small-12 columns">
 		<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
-		<section class="content">
+		<div class="content">
 			<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php the_content(); ?>
 			<div class="row">
@@ -71,7 +71,7 @@ Template Name: Faculty Books
 		<div class="row">
 			<?php flagship_pagination($faculty_books_query->max_num_pages); ?>
 		</div>
-		</section>
+		</div>
 	</div>	<!-- End main content (left) section -->
 </div> <!-- End #landing -->
 <?php get_footer(); ?>

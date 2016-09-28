@@ -4,7 +4,7 @@
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="small-12 columns">
 		<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
-		<section class="content">
+		<div class="content">
 			<h1 class="page-title capitalize"><?php echo $program_slug; ?> Faculty Books</h1>
 			<?php
 			 if ( have_posts() ) : while (have_posts()) : the_post(); ?>
@@ -36,7 +36,7 @@
 		<div class="row">
 			<?php flagship_pagination(); ?>
 		</div>
-		</section>
+		</div>
 	</div>	<!-- End main content (left) section -->
 </div> <!-- End #landing -->
 <?php get_footer(); ?>

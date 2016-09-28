@@ -29,10 +29,10 @@ Template Name: Program People Directory
 	$filter_classes = implode(' ', $filter_slugs);
 	?>
 
-<div class="row wrapper radius10">
+<div class="row wrapper radius10" role="main">
 <div class="small-12 columns">
 	<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
-	<section class="content row">
+	<div class="content row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h1 class="page-title"><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
@@ -47,11 +47,11 @@ Template Name: Program People Directory
 					</label>
 			</div>
 		</div>
-	</section>
+	</div>
 
 
 
-	<section class="row" id="fields_container">
+	<div class="row" id="fields_container">
 		<ul class="small-12 columns" id="directory">
 		<?php foreach($roles as $role) {
 			$role_slug = $role->slug;
@@ -80,7 +80,7 @@ Template Name: Program People Directory
 		</div>
 			<?php } ?>
 		</ul>
-	</section>
+	</div>
 	<div class="row">
 		<div class="small-12 columns">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();  the_content(); endwhile; endif; ?>

@@ -2,7 +2,7 @@
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="small-12 columns">
 		<?php $theme_option = flagship_sub_get_global_options(); $news_query_cond = $theme_option['flagship_sub_news_query_cond']; ?>
-		<main class="content">
+		<div class="content">
 		
 		<h1 class="page-title capitalize"><?php echo $program_slug . ' ' . $theme_option['flagship_sub_feed_name']; ?> Archive</h1>
 
@@ -42,7 +42,7 @@
 		<div class="row">
 			<?php flagship_pagination(); ?>
 		</div>
-		</main>
+		</div>
 	</div>	<!-- End main content (left) section -->
 </div> <!-- End #landing -->
 <?php get_footer(); ?>

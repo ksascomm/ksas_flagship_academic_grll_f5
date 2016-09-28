@@ -27,18 +27,18 @@ Template Name: People Directory
 	}
 	$filter_classes = implode(' ', $filter_slugs);
 	?>
-<div class="row wrapper radius10">
-	<section class="row">
+<div class="row wrapper radius10" role="main">
+	<div class="row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h1 class="page-title"><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
 		<?php $theme_option = flagship_sub_get_global_options();
 				if ( $theme_option['flagship_sub_directory_search']  == '1' ) { get_template_part('/parts/directory-search'); } ?>
-	</section>
+	</div>
 
 
 
-	<section class="row" id="fields_container">
+	<div class="row" id="fields_container">
 		<ul class="large-12 columns" id="directory">
 		<?php foreach($roles as $role) {
 			$role_slug = $role->slug;
@@ -67,7 +67,7 @@ Template Name: People Directory
 			</div>
 			<?php } ?>
 		</ul>
-	</section>
+	</div>
 
 	<div class="row">
 		<div class="large-12 columns">

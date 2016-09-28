@@ -3,7 +3,7 @@
 	<div class="small-8 columns wrapper radius-left offset-topgutter">
 		<?php locate_template('parts/nav-breadcrumbs.php', true, false);
 		$theme_option = flagship_sub_get_global_options(); ?>
-		<section class="content">
+		<div class="content">
 		<h1 class="page-title capitalize"><?php echo $program_name . ' ' . $theme_option['flagship_sub_feed_name']; ?> Archive</h1>
 		<?php
 		while (have_posts()) : the_post(); ?>
@@ -20,7 +20,7 @@
 		<div class="row">
 			<?php flagship_pagination(); ?>
 		</div>
-		</section>
+		</div>
 	</div>	<!-- End main content (left) section -->
 <?php locate_template('parts/sidebar.php', true, false); ?>
 </div> <!-- End #landing -->
