@@ -1,13 +1,13 @@
 	<aside class="large-4 small-12 columns hide-for-print" id="sidebar"> <!-- Begin Sidebar -->
 		<!-- Start Featured Image -->
-
-		<!-- Start Navigation for Sibling Pages -->		<!-- END Featured Image --> <?php
+<?php
 		if ( is_page() && has_post_thumbnail()  ) {
 			wp_reset_query();
 				the_post_thumbnail('full', array('class'	=> "offset-gutter radius-topright featured hide-for-small"));
 			 }
 		 ?>
-
+			<!-- END Featured Image --> 
+<!-- Start Navigation for Sibling Pages -->	
 			<?php
 				$program_name = get_the_program_name($post);
 				if(empty($program_name)) {$program_name = 'Main Menu';}
@@ -20,7 +20,7 @@
 								$parent_name = $parent_page->post_title;
 							?>
 							<div class="offset-gutter radius-topright" id="sidebar_header">
-								<h5 class="white">Also in <?php echo $parent_name ?></h5>
+								<h5 class="white">Also in <span class="grey bold"><?php echo $parent_name ?></span></h5>
 							</div>
 							<?php
 								wp_nav_menu( array(
@@ -28,7 +28,6 @@
 									'menu_class' => 'nav',
 									'container_class' => 'offset-gutter',
 									'submenu' => $parent_name,
-									'items_wrap' => '<ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',
 								));
 							}
 						//If there is only one ancestor display a menu of children
@@ -39,9 +38,9 @@
 									'menu_class' => 'nav',
 									'fallback_cb' => 'false',
 									'container_class' => 'offset-gutter',
-									'items_wrap' =>  '<div class="radius-topright" id="sidebar_header"><h5 class="white">Also in ' . $page_name . '</h5></div><ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',
+									'items_wrap' =>  '<div class="radius-topright" id="sidebar_header"><h5 class="white">Also in <span class="grey bold">' . $page_name . '</span></h5></div><ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',
 									'submenu' => $page_name,
-									'echo' => FALSE,
+									
 								));
 								$tester = 'menu-item';
 								$result = strpos($test_menu, $tester);
