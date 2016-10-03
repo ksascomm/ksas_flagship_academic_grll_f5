@@ -38,7 +38,7 @@ function create_the_sidebars() {
 				'name'          => $single_name .  ' Sidebar',
 				'id'            => $single_slug . '-sb',
 				'description'   => 'This is the ' . $single_name . ' homepage sidebar',
-				'before_widget' => '<div id="widget" class="widget %2$s row">',
+				'before_widget' => '<div id="%1$s" class="widget %2$s row">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<div class="widget_title"><h5 class="white">',
 				'after_title'   => '</h5></div>' 
@@ -219,6 +219,9 @@ function delete_menu_transients()
 }
  
 add_action( 'wp_update_nav_menu', 'delete_menu_transients' );
+
+add_filter('nav_menu_item_id', 'my_css_attributes_filter', 100, 1);
+
 
 function delete_news_transients()
 {
