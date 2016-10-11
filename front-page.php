@@ -82,30 +82,38 @@ if ( $slider_query->have_posts() ) : ?>
 		</div>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<section>
+			<div class="content" role="main">
 				<?php the_content(); ?>
-			</section>
+			</div>
 		<?php endwhile; endif; ?>
 		<?php if ( $news_query->have_posts() ) : ?>
 		<h4><?php echo $theme_option['flagship_sub_feed_name']; ?></h4>
 		<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 		<div class="row">
 			<article class="small-12 columns news-item">
-					<a href="<?php the_permalink(); ?>">
-						<h2 class="uppercase white"><?php the_time( get_option( 'date_format' ) ); ?></h2>
-						<h1 class="white"><?php the_title();?></h1>
-						<?php if ( has_post_thumbnail()) { ?> 
-							<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
-						<?php } ?>
-						<?php the_excerpt(); ?>
-					</a>
+				<header class="entry-header">
+					<h2 class="uppercase white"><?php the_time( get_option( 'date_format' ) ); ?></h2>
+					<h1 class="white">
+						<a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+					</h1>
+				</header>
+				<div class="entry-content">		
+				<?php if ( has_post_thumbnail()) { ?> 
+					<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
+				<?php } ?>
+					<?php the_excerpt(); ?>
 					<hr>
+				</div>
 			</article>
 		</div>
 
 		<?php endwhile; ?>
 		<div class="row">
-		<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"><h5 class="white">View More <?php echo $theme_option['flagship_sub_feed_name']; ?></h5></a>
+			<h5 class="white news-item">
+				<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
+					View More <?php echo $theme_option['flagship_sub_feed_name']; ?>
+				</a>
+			</h5>
 		</div>
 		<?php endif; ?>
 	</div>	<!-- End main content (left) section -->
