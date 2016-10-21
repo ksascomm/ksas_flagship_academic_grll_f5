@@ -186,9 +186,8 @@ li.external a::after {
 	background: none;
 	background: rgba(0,0,0,.1);
 	color: #FFF;
-	font: 18px 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
-	font-family: 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
-	font-size: 18px;
+	font-family: 'gentona-book', Arial, sans-serif;
+	font-size: 1.125rem;
 	text-indent: 15px;
 	padding: 3px 0;
 	white-space: normal;
@@ -250,10 +249,10 @@ body.site-31 #site_title.grll h1{
 	line-height: 1em;
 	font-size: 36px;
 }
-.homepage_bg, #program-tab {
+/*.homepage_bg, #program-tab {
 	background: #2c2c33;
 	background: rgba(0,0,0,.9)
-}
+}*/
 
 .homepage_bg .wrapper {
 	background: none;
@@ -321,14 +320,41 @@ h5.archive {
 }
 
 #program-tab {
+	background: #fff;
 	margin-top: -35px;
 	zoom: 0;
 }
 
 #program-tab h4 {
-	color: #FFF;
-	margin-left: 15px;
+	color: #000;
+	margin-left: 1rem;
 }
+
+.program-buttons .button {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+body.home .wrapper .news-item a {
+	color: #2c2c33;
+}
+
+body.home .wrapper {
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+body.home .wrapper p {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+
+body.home .wrapper .content p {
+	font-size: 1.25rem;
+	line-height: 1.3;
+}
+
 
 .textwidget {
 	margin: 0;
@@ -374,7 +400,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body .semibold, body table
 	color: #2c2c33;
 }
 
-body.home h4, body.home h5, body.home h6 {
+body.home h5, body.home h6 {
 	color: #FFF;
 }
 body.french h1, body.french h2, body.french h3, body.french h4, body.french h5, body.french h6, body.french .semibold, body.french table thead tr th, body.french table tfoot tr td, body.french a, body.french .sidebar_bg ul.nav li a, body.french #sidebar li a {
@@ -540,5 +566,8 @@ display: block;
 }
 .program select {
 	width:auto;
+}
+#program-tab {
+	margin-top: inherit;
 }
 }
