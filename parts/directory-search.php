@@ -29,7 +29,7 @@
 					</div>
 			<?php if ($theme_option['flagship_sub_research_search'] == true) { ?>
 					<div class="row">
-						<h6>Filter by Research Area:</h6>
+						<h3>Filter by Research Area:</h3>
 					</div>
 
 					<?php $filters = get_terms('filter', array(
