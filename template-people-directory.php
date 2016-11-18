@@ -28,7 +28,7 @@ Template Name: People Directory
 	$filter_classes = implode(' ', $filter_slugs);
 	?>
 <div class="row wrapper radius10" role="main">
-	<div class="row">
+	<div class="content row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h1 class="page-title"><?php the_title();?></h1>
 		<?php endwhile; endif; ?>

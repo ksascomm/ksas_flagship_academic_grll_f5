@@ -22,20 +22,12 @@ body {
 	-webkit-animation-delay: 0.1s;
 }
 
-@-webkit-keyframes fontfix {
-	from { opacity: 1; }
-	to { opacity: 1; }
-}
-
 .wrapper ul ul {
 	margin-left: 40px;
 }
 .panel li {
 	list-style: none;
 	margin-left: 10px;
-}
-.capitalize {
-	text-transform: capitalize;
 }
 #page {
 	margin-top: 15px;
