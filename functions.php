@@ -234,3 +234,94 @@ function delete_news_transients()
 	delete_transient('news_mainpage_query');
 }
 	add_action('save_post','delete_news_transients');
+
+function create_page_title_grll() {
+	$program_slug = get_the_program_slug($post);
+	$program_name = get_the_program_name($post);
+		if ( is_front_page() )  { 
+			$page_title = bloginfo('description');
+			$page_title .= print(' '); 
+			$page_title .= bloginfo('name');
+			$page_title .= print(' | Johns Hopkins University'); 
+		} 
+		elseif ( is_home() ) { // blog page
+			$page_title = single_post_title();
+			$page_title .= print(' | ');
+					if(!empty($program_slug)) {
+						$page_title .= print($program_name);
+						$page_title .= print(' | ');
+					} else {
+						$page_title .= print(' | ');
+					}				
+			$page_title .= print(' '); 
+			$page_title .= bloginfo('name');
+			$page_title .= print(' | Johns Hopkins University'); 
+		} 
+			elseif ( is_category() ) { 
+				$page_title = single_cat_title();
+				$page_title .= print(' | ');
+					if(!empty($program_slug)) {
+						$page_title .= print($program_name);
+						$page_title .= print(' | ');
+					} else {
+						$page_title .= print(' | ');
+					}	
+				$page_title .= bloginfo('description');
+				$page_title .= print(' '); 
+				$page_title .= bloginfo('name');
+				$page_title .= print(' | Johns Hopkins University'); 
+		 
+				}
+		
+			elseif (is_single() ) { 
+				$page_title = single_post_title(); 
+				$page_title .= print(' | ');
+					if(!empty($program_slug)) {
+						$page_title .= print($program_name);
+						$page_title .= print(' | ');
+					} else {
+						$page_title .= print(' | ');
+					}					
+				$page_title .= bloginfo('description');
+				$page_title .= print(' '); 
+				$page_title .= bloginfo('name');
+				$page_title .= print(' | Johns Hopkins University'); 
+				}
+		
+			elseif (is_page() && !is_page_template('template-program-frontpage.php') ) { 
+				$page_title = single_post_title();
+					if(!empty($program_slug)) {
+						$page_title .= print(' | ');
+						$page_title .= print($program_name);
+						$page_title .= print(' | ');
+					} else {
+						$page_title .= print(' | ');
+					}		
+				$page_title .= print(' '); 
+				$page_title .= bloginfo('name');
+				$page_title .= print(' | Johns Hopkins University');
+			}
+			elseif (is_page() && is_page_template('template-program-frontpage.php')) {
+				$page_title .= print($program_name);
+				$page_title .= print(' Program | ');
+				$page_title .= bloginfo('description');
+				$page_title .= print(' '); 
+				$page_title .= bloginfo('name');
+				$page_title .= print(' | Johns Hopkins University'); 
+			}	
+			elseif (is_404()) {
+				$page_title = print('Page Not Found'); 
+				$page_title .= print(' | ');
+				$page_title .= bloginfo('description');
+				$page_title .= print(' '); 
+				$page_title .= bloginfo('name');
+				$page_title .= print(' | Johns Hopkins University'); 
+			}
+			else { 
+				$page_title = bloginfo('description');
+				$page_title .= print(' '); 
+				$page_title .= bloginfo('name');
+				$page_title .= print(' | Johns Hopkins University'); 
+				} 
+			return $page_title;
+		}
