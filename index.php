@@ -3,7 +3,7 @@
 	<div class="small-12 columns">
 		<?php locate_template('parts/nav-breadcrumbs.php', true, false);
 		$theme_option = flagship_sub_get_global_options(); $news_query_cond = $theme_option['flagship_sub_news_query_cond']; ?>
-		<div class="content archive">
+		<div class="content post-archive">
 		<h1 class="page-title"><?php echo $theme_option['flagship_sub_feed_name']; ?> Archive</h1>
 		<?php
 			$paged = (get_query_var('paged')) ? (int) get_query_var('paged') : 1;
@@ -33,14 +33,14 @@
 
 		while ($news_archive_query->have_posts()) : $news_archive_query->the_post(); ?>
 		<div class="small-10 columns">
-			<a href="<?php the_permalink(); ?>">
+			
 				<h3 class="uppercase"><?php the_time( get_option( 'date_format' ) ); ?></h3>
-				<h2><?php the_title();?></h2>
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
 					<?php if ( has_post_thumbnail()) { ?> 
 						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
 					<?php } ?>
 				<?php the_excerpt(); ?>
-			</a>
+			
 		</div>
 				<hr>
 			<?php endwhile; ?>
