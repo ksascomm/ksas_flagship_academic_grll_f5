@@ -1,4 +1,6 @@
-	<aside class="large-4 small-12 columns hide-for-print" id="sidebar"> <!-- Begin Sidebar -->
+	<aside class="large-4 small-12 columns hide-for-print" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar"> 
+
+	<!-- Begin Sidebar -->
 		<!-- Start Featured Image -->
 <?php
 		if ( is_page() && has_post_thumbnail()  ) {

@@ -20,12 +20,12 @@
     </div>    
   <![endif]-->
   <!-- CSS Files: Conditionals -->
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.min.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
   <?php wp_head(); ?>
 
   <?php include_once("analytics.php"); ?>
 </head>
 <?php $program_slug = get_the_program_slug($post); global $blog_id; $site_id = 'site-' . $blog_id; ?>
-<body <?php body_class($program_slug . ' ' . $site_id); ?> onLoad="viewport()">
+<body <?php body_class($program_slug . ' ' . $site_id); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<?php if(!empty($program_slug)) { get_template_part('/parts/header-sub'); } else { get_template_part('/parts/header-main'); } ?>

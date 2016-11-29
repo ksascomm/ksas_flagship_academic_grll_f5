@@ -71,7 +71,7 @@ if ( $slider_query->have_posts() ) : ?>
 	</div>
 <?php endif; ?>
 
-<div class="row sidebar_bg" role="main">
+<div class="row sidebar_bg" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 	<div class="medium-12 large-8 columns wrapper toplayer">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
@@ -81,17 +81,19 @@ if ( $slider_query->have_posts() ) : ?>
 		<h4 class="capitalize"><?php echo $program_slug . ' ' . $theme_option['flagship_sub_feed_name']; ?></h4>
 		<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 		<div class="row">
-			<article class="small-12 columns news-item">
-				<h2 class="uppercase black"><?php the_time( get_option( 'date_format' ) ); ?></h2>
-					<h1>
-						<a href="<?php the_permalink(); ?>">
-							<?php the_title();?>
-						</a>
-					</h1>
+			<article class="small-12 columns news-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+				<h2 class="uppercase black" itemprop="datePublished"><?php the_time( get_option( 'date_format' ) ); ?></h2>
+				<h1 itemprop="headline">
+					<a href="<?php the_permalink(); ?>">
+						<?php the_title();?>
+					</a>
+				</h1>
+				<div class="entry-content" itemprop="text">		
 					<?php if ( has_post_thumbnail()) { ?>
-						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
+						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft", 'itemprop' => 'image')); ?>
 					<?php } ?>
 					<?php the_excerpt(); ?>
+				</div>	
 				<hr>
 			</article>
 		</div>

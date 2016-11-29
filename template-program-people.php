@@ -29,7 +29,7 @@ Template Name: Program People Directory
 	$filter_classes = implode(' ', $filter_slugs);
 	?>
 
-<div class="row wrapper radius10" role="main">
+<div class="row wrapper radius10" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 <div class="small-12 columns">
 	<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>
 	<div class="content row">

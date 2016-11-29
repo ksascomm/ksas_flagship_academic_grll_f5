@@ -65,7 +65,7 @@
 	</div>
 	<?php endif; ?>
 
-	<div class="row sidebar_bg radius10" role="main">
+	<div class="row sidebar_bg radius10" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 		<div class="small-12 columns">
 			<div class="row">
 				<div class="large-3 columns radius-top" id="program-tab">
@@ -99,16 +99,16 @@
 			
 		<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 			<div class="row">
-				<article class="small-12 columns news-item">
+				<article class="small-12 columns news-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 					<header class="entry-header">
-						<h2 class="uppercase"><?php the_time( get_option( 'date_format' ) ); ?></h2>
-						<h1>
+						<h2 class="uppercase" itemprop="datePublished"><?php the_time( get_option( 'date_format' ) ); ?></h2>
+						<h1 itemprop="headline">
 							<a href="<?php the_permalink(); ?>"><?php the_title();?></a>
 						</h1>
 					</header>
-					<div class="entry-content">		
+					<div class="entry-content" itemprop="text">		
 					<?php if ( has_post_thumbnail()) { ?> 
-						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
+						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft", 'itemprop' => 'image')); ?>
 					<?php } ?>
 						<?php the_excerpt(); ?>
 						<hr>
@@ -132,8 +132,7 @@
 		<!-- End content (left) section -->
 
 		<!-- Begin Sidebar -->
-		<aside class="large-4 small-12 columns hide-for-print" id="sidebar"> 
-
+		<aside class="large-4 small-12 columns hide-for-print" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar"> 
 			<?php dynamic_sidebar( 'homepage-sb' ); ?>
 
 		</aside>

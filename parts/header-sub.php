@@ -13,7 +13,7 @@
     		));
 
     $count_programs =  count($programs); ?>
-<header>
+<header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
 	<div id="mobile-nav">
 		<div class="row">
 			<div class="small-12 large-4 columns centered blue_bg">
@@ -30,7 +30,12 @@
 					<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo.png" alt="jhu logo"></a></li>
 				</div>
 				<div class="medium-9 columns">
-					<a href="<?php echo site_url('/') . $program_slug; ?>"><h1 class="white"><span class="small"><?php echo get_bloginfo ( 'title' ); ?></span>	<span class="capitalize">				<?php echo $program_name . ' Program'; ?></span></h1></a>
+					<h1 itemprop="headline">
+						<a class="white" href="<?php echo site_url('/') . $program_slug; ?>">
+							<span class="small" itemprop="headline"><?php echo get_bloginfo ( 'title' ); ?></span>
+							<span class="capitalize" itemprop="headline"><?php echo $program_name . ' Program'; ?></span>
+						</a>
+					</h1>
 				</div>
 			</div>
 		</div>

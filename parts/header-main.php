@@ -1,4 +1,4 @@
-<header>
+<header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
 	<?php
 		$home_url = site_url();
 		$program_slug = get_the_program_slug($post);
@@ -14,7 +14,7 @@
 				<div class="row">
 					<div class="small-12 large-4 columns centered">
 						<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="jhu logo"></a></div>
-							<h1 class="white"><?php echo get_bloginfo( 'title' ); ?></h1>
+							<h1 class="white" itemprop="headline"><?php echo get_bloginfo( 'title' ); ?></h1>
 					</div>
 				</div>
 			</div>
@@ -26,7 +26,7 @@
 					<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo.png" alt="jhu logo"></a></li>
 				</div>
 				<div class="medium-9 columns">
-					<h1><a class="white" href="<?php echo site_url(); ?>"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
+					<h1 itemprop="headline"><a class="white" href="<?php echo site_url(); ?>"><span class="small" itemprop="description"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
 				</div>			
 
 					</div>

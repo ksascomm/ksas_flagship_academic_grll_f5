@@ -1,6 +1,6 @@
-<footer>
+<footer itemscope="itemscope" itemtype="http://schema.org/WPFooter">
   	<div class="row hide-for-print">
-		<nav class="small-10 medium-3 columns" id="quicklinks" aria-label="Quicklinks Menu">
+		<nav class="small-10 medium-3 columns" id="quicklinks" aria-label="Quicklinks Menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
   		<?php //Check Theme Options for Quicklinks setting
 	  		$theme_option = flagship_sub_get_global_options();
 	  		if ( $theme_option['flagship_sub_quicklinks']  == '1' ) {
