@@ -20,7 +20,7 @@
     </div>    
   <![endif]-->
   <!-- CSS Files: Conditionals -->
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.min.css">
 
   <?php wp_head(); ?>
 
