@@ -12,9 +12,9 @@ Template Name: ISIS Courses (All GRLL Depts)
 		$department_unclean = $theme_option['flagship_sub_isis_name'];
 		$department = str_replace(' ', '%20', $department_unclean);
 		$department = str_replace('&', '%26', $department);
-		$fall = 'fall%202015';
-		$spring = 'spring%202016';
-		$intersession = 'intersession%202016';
+		//$fall = 'fall%202016';
+		$spring = 'spring%202017';
+		$intersession = 'intersession%202017';
 		$approval = 'approval%20required';
 		$closed = 'closed';
 		$open = 'open';
@@ -103,8 +103,8 @@ Template Name: ISIS Courses (All GRLL Depts)
 					<div id="fields_search" class="panel radius10">			
 						<div class="row filter option-set" data-filter-group="term">
 								<div class="button radio"><a href="#" data-filter="*" class="selected" onclick="ga('send', 'event', 'ISIS', 'Courses', 'All');">View All</a></div>
-								<div class="button radio"><a href="#" data-filter=".Summer" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Summer');">Summer 2016 Courses</a></div>
-								<div class="button radio"><a href="#" data-filter=".Fall" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Fall');">Fall 2016 Courses</a></div>
+								<div class="button radio"><a href="#" data-filter=".Intersession" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Intersession');">Intersession 2017 Courses</a></div>
+								<div class="button radio"><a href="#" data-filter=".Spring" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Fall');">Spring 2017 Courses</a></div>
 								<h5 class="inline"><a href="#" class="acc_expandall" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Expand All');">[Expand All]</a></h5>
 						</div>
 					<div class="row">

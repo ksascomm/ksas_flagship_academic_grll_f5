@@ -12,10 +12,10 @@ Template Name: ISIS Courses (by Program)
     $department_unclean = $theme_option['flagship_sub_isis_name'];
     $department = str_replace(' ', '%20', $department_unclean);
     $department = str_replace('&', '%26', $department);
-    $fall = 'fall%202016';
+    //$fall = 'fall%202016';
     $spring = 'spring%202017';
     $intersession = 'intersession%202017';
-    $summer = 'summer%202017';
+    //$summer = 'summer%202017';
     $open = 'open';
     $approval = 'approval%20required';
     $closed = 'closed';
@@ -34,12 +34,12 @@ Template Name: ISIS Courses (by Program)
     //$course_curl->cache($cache_dir, 2592000);
  
  //Create API Url calls
-    $courses_fall_url = 'https://isis.jhu.edu/api/classes?key=' . $key . '&School=Krieger%20School%20of%20Arts%20and%20Sciences&Term=' . $fall . '&Department=AS%20' . $department . '&SubDepartment=' . $subdepartment;
+    //$courses_fall_url = 'https://isis.jhu.edu/api/classes?key=' . $key . '&School=Krieger%20School%20of%20Arts%20and%20Sciences&Term=' . $fall . '&Department=AS%20' . $department . '&SubDepartment=' . $subdepartment;
     $courses_intersession_url = 'https://isis.jhu.edu/api/classes?key=' . $key . '&School=Krieger%20School%20of%20Arts%20and%20Sciences&Term=' . $intersession . '&Department=AS%20' . $department . '&SubDepartment=' . $subdepartment;
     $courses_spring_url = 'https://isis.jhu.edu/api/classes?key=' . $key . '&School=Krieger%20School%20of%20Arts%20and%20Sciences&Term=' . $spring . '&Department=AS%20' . $department . '&SubDepartment=' . $subdepartment;
     //$courses_summer_url = 'https://isis.jhu.edu/api/classes?key=' . $key . '&School=Krieger%20School%20of%20Arts%20and%20Sciences&Term=' . $summer . '&Department=AS%20' . $department . '&SubDepartment=' . $subdepartment;
     $courses_call = array(
-      $courses_fall_url,
+      //$courses_fall_url,
       $courses_intersession_url,
       $courses_spring_url, 
       //$courses_summer_url
@@ -115,8 +115,7 @@ Template Name: ISIS Courses (by Program)
           <div id="fields_search" class="panel radius10">
               <div class="row filter option-set" data-filter-group="term">
                   <div class="button radio"><a href="#" data-filter="*" class="selected" onclick="ga('send', 'event', 'ISIS', 'Courses', 'All');">View All</a></div>
-                  <div class="button radio"><a href="#" data-filter=".Fall" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Fall');">Fall 2016 Courses</a></div>
-                  <div class="button radio"><a href="#" data-filter=".Intersession" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Fall');">Intersession 2017 Courses</a></div>
+                  <div class="button radio"><a href="#" data-filter=".Intersession" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Intersession');">Intersession 2017 Courses</a></div>
                   <div class="button radio"><a href="#" data-filter=".Spring" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Fall');">Spring 2017 Courses</a></div>
                   <h5 class="inline"><a href="#" class="acc_expandall" onclick="ga('send', 'event', 'ISIS', 'Courses', 'Expand All');">[Expand All]</a></h5>
               </div>
