@@ -31,7 +31,7 @@
 
 					</div>
 				</div>
-				<div class="row hide-for-print" id="navs" role="navigation" aria-labelledby="main_nav">
+				<div class="row hide-for-print" id="navs" aria-labelledby="main_nav">
 					<div class="small-3 columns program">
 						<label for="program_switch" class="screen-reader-text">Select Program</label>
 						<select id="program_switch">
@@ -49,7 +49,7 @@
 					'container_id' => 'main_nav',
 					'container_class' => 'small-9 columns',
 					'fallback_cb' => 'foundation_page_menu',
-					'items_wrap' => '<ul id="%1$s" class="%2$s" role="navigation" aria-label="Main menu">%3$s</ul>',
+					'items_wrap' => '<ul id="%1$s" class="%2$s" aria-label="Main menu">%3$s</ul>',
 					'walker' => new foundation_navigation(),
 					'depth' => 2  )); ?>
 				</div>

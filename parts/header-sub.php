@@ -39,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row hide-for-print" id="<?php echo $program_slug; ?>" role="navigation" aria-labelledby="main_nav">
+		<div class="row hide-for-print" id="<?php echo $program_slug; ?>" aria-labelledby="main_nav">
 			<div class="small-3 columns program">
 				<label for="program_switch" class="screen-reader-text">Select Program</label>
 				<select id="program_switch">
@@ -60,7 +60,7 @@
 					'container_class' => 'small-9 columns',
 					'fallback_cb' => 'foundation_page_menu',
 					'walker' => new foundation_navigation(),
-					'items_wrap' => '<ul id="%1$s" class="%2$s" role="navigation" aria-label="Main menu">%3$s</ul>',
+					'items_wrap' => '<ul id="%1$s" class="%2$s" aria-label="Main menu">%3$s</ul>',
 					'depth' => 2,
 					'echo' => 0  ));
 
