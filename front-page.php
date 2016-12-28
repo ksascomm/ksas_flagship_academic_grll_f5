@@ -88,7 +88,7 @@
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<div class="content" role="main">
+			<div class="content">
 				<?php the_content(); ?>
 			</div>
 
@@ -99,13 +99,11 @@
 			
 		<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 			<div class="row">
-				<article class="small-12 columns news-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-					<header class="entry-header">
-						<h2 class="uppercase" itemprop="datePublished"><?php the_time( get_option( 'date_format' ) ); ?></h2>
-						<h1 itemprop="headline">
-							<a href="<?php the_permalink(); ?>"><?php the_title();?></a>
-						</h1>
-					</header>
+				<article class="small-12 columns news-item" aria-labelledby="post-<?php the_ID(); ?>" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+					<h2 class="uppercase" itemprop="datePublished"><?php the_time( get_option( 'date_format' ) ); ?></h2>
+					<h1 itemprop="headline">
+						<a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title();?></a>
+					</h1>
 					<div class="entry-content" itemprop="text">		
 					<?php if ( has_post_thumbnail()) { ?> 
 						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft", 'itemprop' => 'image')); ?>
