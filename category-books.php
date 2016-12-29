@@ -15,7 +15,9 @@
 					<?php $faculty_post_id = get_post_meta($post->ID, 'ecpt_pub_author', true);
 						  $faculty_post_id2 = get_post_meta($post->ID, 'ecpt_pub_author2', true); ?>
 				<ul class="no-bullet">
-					<li><h2><?php the_title(); ?></h2></li>
+					<li>
+						<h2 itemprop="headline" id="post-<?php the_ID(); ?>"><?php the_title(); ?></h2>
+					</li>
 					<li>
 					<?php if ( get_post_meta($post->ID, 'ecpt_pub_date', true) ) :?> 
 						<?php echo get_post_meta($post->ID, 'ecpt_pub_date', true);  ?>,
