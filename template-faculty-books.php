@@ -43,7 +43,7 @@ Template Name: Faculty Books
 					set_transient( 'faculty_books_query_' . $paged, $faculty_books_query, 2592000 );
 			}
 			 if ( $faculty_books_query->have_posts() ) : while ($faculty_books_query->have_posts()) : $faculty_books_query->the_post(); ?>
-			<article id="post-<?php the_ID(); ?>" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">			 
+			<article aria-labelledby="post-<?php the_ID(); ?>" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">		 
 					<?php if ( has_post_thumbnail()) { ?>
 						<?php the_post_thumbnail('medium', array('class'	=> "floatleft", 'itemprop' => 'image')); ?>
 					<?php } ?>
@@ -51,7 +51,11 @@ Template Name: Faculty Books
 						  $faculty_post_id2 = get_post_meta($post->ID, 'ecpt_pub_author2', true); ?>
 
 				<ul class="no-bullet">
-					<li><h2><?php the_title(); ?></h2></li>
+					<li>
+						<h2 itemprop="headline" id="post-<?php the_ID(); ?>">
+							<?php the_title(); ?>
+						</h2>
+					</li>
 					<li>
 					<?php if ( get_post_meta($post->ID, 'ecpt_pub_date', true) ) :?> 
 						<?php echo get_post_meta($post->ID, 'ecpt_pub_date', true);  ?>,

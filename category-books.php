@@ -8,7 +8,7 @@
 			<h1 class="page-title capitalize"><?php echo $program_slug; ?> Faculty Books</h1>
 			<?php
 			 if ( have_posts() ) : while (have_posts()) : the_post(); ?>
-			 <article id="post-<?php the_ID(); ?>" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">	
+				<article aria-labelledby="post-<?php the_ID(); ?>" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 					<?php if ( has_post_thumbnail()) { ?>
 						<?php the_post_thumbnail('medium', array('class'	=> "floatleft", 'itemprop' => 'image')); ?>
 					<?php } ?>
