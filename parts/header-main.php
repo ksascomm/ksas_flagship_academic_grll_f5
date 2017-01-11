@@ -42,16 +42,15 @@
 							<?php } } ?>
 						</select>
 					</div>
-					<?php wp_nav_menu( array(
-					'theme_location' => 'main_nav',
-					'menu_class' => 'nav-bar',
-					'container' => 'nav',
-					'container_id' => 'main_nav',
-					'container_class' => 'small-9 columns',
-					'fallback_cb' => 'foundation_page_menu',
-					'items_wrap' => '<ul id="%1$s" class="%2$s" aria-label="Main menu">%3$s</ul>',
-					'walker' => new foundation_navigation(),
-					'depth' => 2  )); ?>
+					<nav class="small-9 columns hide-for-print" aria-label="Main Menu" id="main_nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">	
+						<?php wp_nav_menu( array(
+						'theme_location' => 'main_nav',
+						'menu_class' => 'nav-bar',
+						'fallback_cb' => 'foundation_page_menu',
+						'items_wrap' => '<ul id="%1$s" class="%2$s" aria-label="Main menu">%3$s</ul>',
+						'walker' => new foundation_navigation(),
+						'depth' => 2  )); ?>
+					</nav>
 				</div>
 			</div>
 </header>

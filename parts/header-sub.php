@@ -50,21 +50,17 @@
 					<?php } } ?>
 				</select>
 			</div>
-			<?php
-		
-				$program_menu = wp_nav_menu( array(
-					'menu' => $program_slug,
-					'menu_class' => 'nav-bar',
-					'container' => 'nav',
-					'container_id' => 'main_nav',
-					'container_class' => 'small-9 columns',
-					'fallback_cb' => 'foundation_page_menu',
-					'walker' => new foundation_navigation(),
-					'items_wrap' => '<ul id="%1$s" class="%2$s" aria-label="Main menu">%3$s</ul>',
-					'depth' => 2,
-					'echo' => 0  ));
-
-			echo $program_menu; ?>
+			<nav class="small-9 columns hide-for-print" aria-label="Main Menu" id="main_nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">	
+				<?php $program_menu = wp_nav_menu( array(
+						'menu' => $program_slug,
+						'menu_class' => 'nav-bar',
+						'fallback_cb' => 'foundation_page_menu',
+						'walker' => new foundation_navigation(),
+						'items_wrap' => '<ul id="%1$s" class="%2$s" aria-label="Main menu">%3$s</ul>',
+						'depth' => 2,
+						'echo' => 0  ));
+				echo $program_menu; ?>
+			</nav>
 		</div>
 	</div>
 
