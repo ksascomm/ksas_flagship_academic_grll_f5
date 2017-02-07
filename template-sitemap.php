@@ -8,7 +8,7 @@ Template Name: Sitemap Listing (Menus)
 <div class="row sidebar_bg radius10" id="page" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 	<div class="small-12 large-8 columns wrapper radius-left offset-topgutter">	
 		<?php locate_template('parts/nav-breadcrumbs.php', true, false); ?>	
-		<div class="content" role="navigation">
+		<div class="content">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<h1 class="page-title"><?php the_title();?></h1>
 			    <?php wp_nav_menu( array( 
