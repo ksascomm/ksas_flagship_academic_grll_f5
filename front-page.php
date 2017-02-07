@@ -49,7 +49,7 @@
 
 	if ( $slider_query->have_posts() ) : ?>
 
-	<div class="row hide-for-mobile">
+	<div class="row hide-for-mobile" role="region" aria-label="<?php echo get_bloginfo( 'title' ); ?> Highlights">
 		<div id="slider" class="small-12 columns no-gutter">
 		<?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 			<div class="slide row">

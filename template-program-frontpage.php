@@ -54,20 +54,19 @@ Template Name: Program Homepage
 	}
 /********BEGIN SLIDER**************/
 if ( $slider_query->have_posts() ) : ?>
-	<div class="row hide-for-mobile">
-	<div id="slider" class="small-12 columns no-gutter">
-
-	<?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
-		<div class="slide row">
-		<summary class="small-4 small-offset-8 columns vertical" id="caption">
-				<div class="middle">
-					<h1 class="white"><?php the_title(); ?></h1>
-					<p class="white italic"><?php echo get_the_content(); ?></p>
+	<div class="row hide-for-mobile" role="region" aria-label="<?php the_title(); ?> Program Highlights">
+		<div id="slider" class="small-12 columns no-gutter">
+			<?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
+				<div class="slide row">
+					<summary class="small-4 small-offset-8 columns vertical" id="caption">
+						<div class="middle">
+							<h1 class="white"><?php the_title(); ?></h1>
+							<p class="white italic"><?php echo get_the_content(); ?></p>
+						</div>
+					</summary>
 				</div>
-		</summary>
+			<?php endwhile; ?>
 		</div>
-	<?php endwhile; ?>
-	</div>
 	</div>
 <?php endif; ?>
 
