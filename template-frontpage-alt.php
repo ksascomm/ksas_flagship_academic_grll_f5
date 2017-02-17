@@ -68,7 +68,7 @@ if ( $slider_query->have_posts() ) : ?>
 	</div>
 <?php endif; ?>
 
-<div class="row homepage_bg">
+<div class="row homepage_bg" id="page">
 	<div class="small-12 columns">
 		<div class="row">
 			<div class="large-3 small-12 columns radius-top" id="program-tab">

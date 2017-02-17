@@ -28,4 +28,5 @@
 </head>
 <?php $program_slug = get_the_program_slug($post); global $blog_id; $site_id = 'site-' . $blog_id; ?>
 <body <?php body_class($program_slug . ' ' . $site_id); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<a href="#page" class="skipLink">Skip to main content</a>
 	<?php if(!empty($program_slug)) { get_template_part('/parts/header-sub'); } else { get_template_part('/parts/header-main'); } ?>

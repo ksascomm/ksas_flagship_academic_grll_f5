@@ -4,6 +4,10 @@ Template Name: Program Homepage
 */
 ?>
 <?php get_header(); ?>
+
+
+<main id="page">
+
 <?php /********SET VARIABLES**************/
 	$theme_option = flagship_sub_get_global_options();
 	$program_slug = get_the_program_slug($post);
@@ -70,7 +74,7 @@ if ( $slider_query->have_posts() ) : ?>
 	</div>
 <?php endif; ?>
 
-<div class="row sidebar_bg" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+<div class="row sidebar_bg" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 	<div class="medium-12 large-8 columns wrapper toplayer">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
@@ -110,4 +114,5 @@ if ( $slider_query->have_posts() ) : ?>
 	</div>	<!-- End main content (left) section -->
 <?php locate_template('parts/sidebar.php', true, false); ?>
 </div> <!-- End #landing -->
+</main>
 <?php get_footer(); ?>

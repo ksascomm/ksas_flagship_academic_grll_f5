@@ -27,7 +27,7 @@ Template Name: People Directory
 	}
 	$filter_classes = implode(' ', $filter_slugs);
 	?>
-<div class="row wrapper radius10" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+<div class="row wrapper radius10" id="page" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 	<div class="content row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h1 class="page-title"><?php the_title();?></h1>
