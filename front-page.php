@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main id="page">
+<main>
 
 <?php
 /********SET VARIABLES**************/
@@ -72,7 +72,7 @@ if ( $slider_query->have_posts() ) : ?>
 			</div>
 		</div>
 	</div>
-	<div class="small-12 large-8 columns wrapper radius-left offset-topgutter">
+	<div class="small-12 large-8 columns wrapper radius-left offset-topgutter" id="page">
 		<div class="row">
 			<div class="small-12 columns program-buttons">
 				<?php foreach ($program_slugs as $program_slug) { ?>

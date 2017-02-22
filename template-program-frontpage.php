@@ -6,7 +6,7 @@ Template Name: Program Homepage
 <?php get_header(); ?>
 
 
-<main id="page">
+<main>
 
 <?php /********SET VARIABLES**************/
 	$theme_option = flagship_sub_get_global_options();
@@ -75,7 +75,7 @@ if ( $slider_query->have_posts() ) : ?>
 <?php endif; ?>
 
 <div class="row sidebar_bg" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-	<div class="medium-12 large-8 columns wrapper toplayer">
+	<div class="medium-12 large-8 columns wrapper toplayer" id="page">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
 		<?php endwhile; endif; ?>
