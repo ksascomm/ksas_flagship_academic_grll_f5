@@ -14,6 +14,7 @@
 
     $count_programs =  count($programs); ?>
 <header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
+	<a href="#page" class="skipLink">Skip to main content</a>
 	<div id="mobile-nav">
 		<div class="row">
 			<div class="small-12 large-4 columns centered blue_bg">

@@ -1,4 +1,5 @@
 <header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
+<a href="#page" class="skipLink">Skip to main content</a>
 	<?php
 		$home_url = site_url();
 		$program_slug = get_the_program_slug($post);
