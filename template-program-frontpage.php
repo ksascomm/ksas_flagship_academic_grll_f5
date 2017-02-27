@@ -58,7 +58,7 @@ Template Name: Program Homepage
 	}
 /********BEGIN SLIDER**************/
 if ( $slider_query->have_posts() ) : ?>
-	<div class="row hide-for-mobile" role="region" aria-label="<?php the_title(); ?> Program Highlights">
+	<div class="row hide-for-mobile" aria-label="<?php the_title(); ?> Program Highlights">
 		<div id="slider" class="small-12 columns no-gutter">
 			<?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 				<div class="slide row">
