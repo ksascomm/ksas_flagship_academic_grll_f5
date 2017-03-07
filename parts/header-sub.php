@@ -15,7 +15,11 @@
     $count_programs =  count($programs); ?>
 <header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
 	<a href="#page" class="skipLink">Skip to main content</a>
-	<div id="mobile-nav">
+	<div class="print-only">
+		<img src="<?php echo get_template_directory_uri() ?>/assets/images/krieger.small.horizontal.blue.jpg" alt="krieger logo">
+		<h1><?php echo get_bloginfo ( 'description' ); ?> <?php echo get_bloginfo( 'title' ); ?></h1>
+	</div>
+	<div id="mobile-nav" class="hide-on-print">
 		<div class="row">
 			<div class="small-12 large-4 columns centered blue_bg">
 				<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="jhu logo"></a></div>
@@ -23,7 +27,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="desktop-nav">
+	<div id="desktop-nav" class="hide-on-print">
 		<?php get_template_part( '/parts/offcanvas' ); ?>
 		<div class="row">
 			<div class="small-12 columns" id="logo_nav">
