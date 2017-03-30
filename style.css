@@ -601,6 +601,13 @@ body.site-31.spanish {
 .content nav ul {
 	list-style-type: square;
 }
+.testimonial .accordion-navigation > a:after {
+    display: none;
+}
+
+.testimonial .accordion-navigation.active a:after {
+    display: none;
+}
 @media only screen and (max-width:767px) {
 	.button {
 		display: block;
