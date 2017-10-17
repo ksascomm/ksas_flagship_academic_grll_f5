@@ -8,6 +8,16 @@
     <title>
         <?php create_page_title_grll(); ?>
     </title>
+
+    <meta property="og:site_name" content="Krieger School of Arts and Sciences" />
+    <meta property="og:title" content="<?php echo get_bloginfo( 'title' ); ?> | Krieger School of Arts and Sciences | Johns Hopkins University" />
+    <meta property="og:url" content="<?php echo site_url(); ?>" />
+    <meta property="og:description" content="The Zanvyl Krieger School of Arts and Sciences is the core institution of Johns Hopkins University’s Homewood campus" />
+
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/gilman.jpg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="400" />
+    
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
     <!-- CSS Files: All pages -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/app.min.css">
