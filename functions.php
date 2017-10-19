@@ -325,3 +325,9 @@ function create_page_title_grll() {
 				} 
 			return $page_title;
 		}
+
+add_action( 'save_post', 'clear_cache_for_program_home_pages', 10, 1 );
+
+function clear_cache_for_program_home_pages() {
+   array_map('comet_cache::clearPost', [63, 64, 65, 66, 67, 198]);  // Clears cache for Program Homepages (63=French, 64=German, 65=Italian, 66=Portuguese, 67=Spanish, 198=Hebrew) 
+}
