@@ -23,9 +23,8 @@
 		<!-- Footer Links -->
 		<div class="medium-6 columns" role="navigation" aria-labelledby="menu-footer-links">
 			<ul id="menu-footer-links" class="inline-list hide-for-small-only" role="menu">
-				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/sitemap">Sitemap</a></li>
+				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/sitemap/">Sitemap</a></li>
 				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/about/jobs/">Employment</a></li>
-				<li role="menuitem"><a href="http://krieger.jhu.edu/communications-office/">Communications Office</a></li>
 				<li role="menuitem"><a href="https://www.jhu.edu/alert/">Emergency Alerts & Info</a></li>
 			</ul>
 		</div>
