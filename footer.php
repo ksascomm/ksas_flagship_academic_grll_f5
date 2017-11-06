@@ -21,7 +21,7 @@
 		 ?>
 		</nav>
 		<!-- Footer Links -->
-		<div class="medium-6 columns" role="navigation" aria-labelledby="menu-footer-links">
+		<div class="medium-4 columns" role="navigation" aria-labelledby="menu-footer-links">
 			<ul id="menu-footer-links" class="inline-list hide-for-small-only" role="menu">
 				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/sitemap/">Sitemap</a></li>
 				<li role="menuitem"><a href="<?php echo get_site_url(); ?>/about/jobs/">Employment</a></li>
@@ -29,13 +29,13 @@
 			</ul>
 		</div>
 		<!-- Social Media -->
-		<div class="small-12 medium-4 large-2 columns" id="social-media" aria-labelledby="social-media">
-			<div class="small-6 columns">
-				<a href="http://facebook.com/jhuksas" title="Facebook"><span class="fa fa-facebook-official fa-3x"></span><span class="screen-reader-text">Facebook</span></a>
-			</div>
-			<div class="small-6 columns">
-				<a href="https://www.youtube.com/user/jhuksas" title="YouTube"><span class="fa fa-youtube-square fa-3x"></span><span class="screen-reader-text">YouTube</span></a>
-			</div>
+		<div class="small-12 medium-5 columns" id="social-media" role="navigation" aria-labelledby="social-media">
+			<ul class="inline-list">
+				<li><a href="http://facebook.com/jhuksas"><span class="fa fa-facebook-official fa-2x"></span><span class="screen-reader-text">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/jhuksas/"><span class="fa fa-instagram fa-2x"></span><span class="screen-reader-text">Instagram</span></a></li>
+				<li><a href="https://twitter.com/JHUKSAS"><span class="fa fa-twitter fa-2x"></span><span class="screen-reader-text">Twitter</span></a></li>
+				<li><a href="https://www.youtube.com/user/jhuksas"><span class="fa fa-youtube-square fa-2x"></span><span class="screen-reader-text">YouTube</span></a></li>
+			</ul>
 		</div>
 	</div>
 	<!-- Copyright and Address -->
